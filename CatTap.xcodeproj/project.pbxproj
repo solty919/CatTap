@@ -20,6 +20,7 @@
 		405CFA4B27856F4300E52840 /* NotoSansJP-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4527856F4300E52840 /* NotoSansJP-Black.otf */; };
 		405CFA4C27856F4300E52840 /* NotoSansJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4627856F4300E52840 /* NotoSansJP-Light.otf */; };
 		405CFA4D27856F4300E52840 /* NotoSansJP-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4727856F4300E52840 /* NotoSansJP-Medium.otf */; };
+		408A563427B6753B008DB865 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563327B6753B008DB865 /* UIView+Extension.swift */; };
 		40FDD8942785BE41003BE4DB /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8932785BE41003BE4DB /* TopViewController.swift */; };
 		40FDD8972785CA75003BE4DB /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8962785CA75003BE4DB /* SettingTableViewController.swift */; };
 		40FDD89A2785CD03003BE4DB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8992785CD03003BE4DB /* App.swift */; };
@@ -44,6 +45,7 @@
 		405CFA4627856F4300E52840 /* NotoSansJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Light.otf"; sourceTree = "<group>"; };
 		405CFA4727856F4300E52840 /* NotoSansJP-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Medium.otf"; sourceTree = "<group>"; };
 		405CFA4E27856FD600E52840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		408A563327B6753B008DB865 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		40FDD8932785BE41003BE4DB /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		40FDD8962785CA75003BE4DB /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		40FDD8992785CD03003BE4DB /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				40FDD8A02788679E003BE4DB /* UIViewController+Extension.swift */,
+				408A563327B6753B008DB865 /* UIView+Extension.swift */,
 				40FDD8A22788691E003BE4DB /* SKScene+Extension.swift */,
 			);
 			path = Extension;
@@ -252,6 +255,7 @@
 				40FDD8972785CA75003BE4DB /* SettingTableViewController.swift in Sources */,
 				40FDD8942785BE41003BE4DB /* TopViewController.swift in Sources */,
 				405CFA2F27842C5300E52840 /* FreeGameViewController.swift in Sources */,
+				408A563427B6753B008DB865 /* UIView+Extension.swift in Sources */,
 				40FDD89A2785CD03003BE4DB /* App.swift in Sources */,
 				40FDD8A12788679E003BE4DB /* UIViewController+Extension.swift in Sources */,
 				405CFA3E2784477700E52840 /* BugScene.swift in Sources */,

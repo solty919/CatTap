@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansJP-Bold.otf">
+            <string>NotoSansJP-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="TG4-es-YDN">
@@ -236,57 +241,118 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqT-RV-zZJ">
-                                <rect key="frame" x="64" y="426" width="286" height="44"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_image" translatesAutoresizingMaskIntoConstraints="NO" id="fcu-Lc-0gI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Eac-3u-Da8"/>
+                                    <constraint firstAttribute="height" constant="450" id="OZ4-d4-CwT"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
-                                    <fontDescription key="titleFontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="12"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="BV1-FR-VrT" kind="show" id="4jg-2f-MH2"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0y-4R-xsN">
+                                <rect key="frame" x="32" y="348" width="350" height="86"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jTe-YN-SGv">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="86"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Jm-KJ-cGr">
+                                            <rect key="frame" x="8" y="8" width="334" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="きゃっとたっぷ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCB-2O-egT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="46.5"/>
+                                                    <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="32"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこのおもちゃ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8E-2I-mUM">
+                                                    <rect key="frame" x="0.0" y="46.5" width="334" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2Jm-KJ-cGr" firstAttribute="leading" secondItem="jTe-YN-SGv" secondAttribute="leading" constant="8" id="75E-a5-yZ3"/>
+                                        <constraint firstAttribute="trailing" secondItem="2Jm-KJ-cGr" secondAttribute="trailing" constant="8" id="9gL-T8-Xd8"/>
+                                        <constraint firstItem="2Jm-KJ-cGr" firstAttribute="top" secondItem="jTe-YN-SGv" secondAttribute="top" constant="8" id="Jt9-5h-utT"/>
+                                        <constraint firstAttribute="bottom" secondItem="2Jm-KJ-cGr" secondAttribute="bottom" constant="8" id="nbG-xA-zq3"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="120-mk-3Oo">
+                                <rect key="frame" x="32" y="514" width="350" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqT-RV-zZJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="ggT-0P-q8R"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="遊ぶ">
+                                            <fontDescription key="titleFontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="show" id="4jg-2f-MH2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiQ-qL-te5">
+                                        <rect key="frame" x="0.0" y="76" width="350" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="S5v-0K-j9e"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="設定">
+                                            <fontDescription key="titleFontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Qkx-L5-C4B" kind="show" id="plW-TF-EPN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Eeh-zP-abd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bqT-RV-zZJ" firstAttribute="centerY" secondItem="UeY-oT-WQA" secondAttribute="centerY" id="1N0-h5-32c"/>
-                            <constraint firstItem="bqT-RV-zZJ" firstAttribute="leading" secondItem="Eeh-zP-abd" secondAttribute="leading" constant="64" id="KWW-dF-pxd"/>
-                            <constraint firstItem="Eeh-zP-abd" firstAttribute="trailing" secondItem="bqT-RV-zZJ" secondAttribute="trailing" constant="64" id="ot2-z3-0Gu"/>
+                            <constraint firstItem="120-mk-3Oo" firstAttribute="top" secondItem="fcu-Lc-0gI" secondAttribute="bottom" constant="64" id="0Zy-wm-2RR"/>
+                            <constraint firstItem="M0y-4R-xsN" firstAttribute="bottom" secondItem="fcu-Lc-0gI" secondAttribute="bottom" constant="-16" id="6GR-U0-UdZ"/>
+                            <constraint firstItem="fcu-Lc-0gI" firstAttribute="leading" secondItem="Eeh-zP-abd" secondAttribute="leading" id="9v4-5d-Ec7"/>
+                            <constraint firstItem="M0y-4R-xsN" firstAttribute="leading" secondItem="Eeh-zP-abd" secondAttribute="leading" constant="32" id="BQS-3a-CTv"/>
+                            <constraint firstItem="Eeh-zP-abd" firstAttribute="trailing" secondItem="M0y-4R-xsN" secondAttribute="trailing" constant="32" id="BoJ-iE-cBN"/>
+                            <constraint firstItem="fcu-Lc-0gI" firstAttribute="trailing" secondItem="Eeh-zP-abd" secondAttribute="trailing" id="JSD-CF-LMH"/>
+                            <constraint firstItem="fcu-Lc-0gI" firstAttribute="top" secondItem="UeY-oT-WQA" secondAttribute="top" id="Xzq-8q-ATa"/>
+                            <constraint firstItem="Eeh-zP-abd" firstAttribute="trailing" secondItem="120-mk-3Oo" secondAttribute="trailing" constant="32" id="oQJ-IQ-d1i"/>
+                            <constraint firstItem="120-mk-3Oo" firstAttribute="leading" secondItem="Eeh-zP-abd" secondAttribute="leading" constant="32" id="y40-En-43R"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="LnJ-5U-jfj">
-                        <barButtonItem key="rightBarButtonItem" id="nDP-pp-dWB">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="5ys-hL-zLM">
-                                <rect key="frame" x="343.5" y="5" width="50.5" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system"/>
-                                <connections>
-                                    <segue destination="Qkx-L5-C4B" kind="show" id="TD2-L2-zOk"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="LnJ-5U-jfj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QU7-x5-aAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-467" y="106"/>
+            <point key="canvasLocation" x="-468.11594202898556" y="105.80357142857143"/>
         </scene>
         <!--Free Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="FreeGameViewController" customModule="CatTap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2本指タブルタップで戻る" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEK-NB-Vb0">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnJ-9Z-u4W" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2本指タブルタップで戻る" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEK-NB-Vb0">
                                 <rect key="frame" x="16" y="847.5" width="382" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -294,15 +360,22 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="bnJ-9Z-u4W" secondAttribute="trailing" id="EEd-hb-Ox9"/>
+                            <constraint firstItem="bnJ-9Z-u4W" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="JKs-h2-CWR"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="VEK-NB-Vb0" secondAttribute="bottom" id="JY2-yz-KnJ"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="VEK-NB-Vb0" secondAttribute="trailing" constant="16" id="fAp-Ce-jth"/>
+                            <constraint firstAttribute="bottom" secondItem="bnJ-9Z-u4W" secondAttribute="bottom" id="k48-fH-6j6"/>
                             <constraint firstItem="VEK-NB-Vb0" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="16" id="vKG-ky-5pZ"/>
+                            <constraint firstItem="bnJ-9Z-u4W" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="vMx-d2-aif"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="wDl-SK-lP7" appends="YES" id="fcE-iW-5gQ"/>
                         </connections>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationItem key="navigationItem" id="fRq-DY-fdt"/>
+                    <connections>
+                        <outlet property="containerView" destination="bnJ-9Z-u4W" id="e9d-1W-Gzt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" numberOfTouchesRequired="2" id="wDl-SK-lP7">
@@ -311,11 +384,11 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="313.04347826086956" y="105.80357142857143"/>
+            <point key="canvasLocation" x="311.59420289855075" y="105.80357142857143"/>
         </scene>
     </scenes>
     <resources>
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="back_image" width="1292" height="1108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

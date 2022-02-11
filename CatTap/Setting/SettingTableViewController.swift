@@ -76,7 +76,7 @@ final class SettingTableViewController: UITableViewController {
 }
 
 extension SettingTableViewController {
-    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
-        view.backgroundColor = .clear
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        UIView()
     }
 }

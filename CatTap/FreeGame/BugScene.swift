@@ -17,6 +17,8 @@ final class BugScene: SKScene {
     
     override func didMove(to view: SKView) {
         
+        backgroundColor = .clear
+        
         if let bug = bug {
             bug.texture = SKTexture(imageNamed: String(describing: App.shared.kind))
             bug.size = App.shared.size.cgSize
