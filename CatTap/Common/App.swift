@@ -5,6 +5,7 @@ final class App {
     var size: ToySize = .small
     var kind: ToyKind = .bug
     var count = 1
+    var isHiddenMode = false
     var intervalTime = 5
     var hiddenTime = 5
     
