@@ -9,7 +9,9 @@ final class FreeGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        performSegue(withIdentifier: "toGestureTutorialViewController", sender: nil)
+        if !App.shared.isNeverShow {
+            performSegue(withIdentifier: "toGestureTutorialViewController", sender: nil)
+        }
         
         UIApplication.shared.isIdleTimerDisabled = true
         navigationItem.hidesBackButton = true
@@ -26,8 +28,8 @@ final class FreeGameViewController: UIViewController {
             
             //Debug用
             #if DEBUG
-//                containerView.showsFPS = true
-//                containerView.showsNodeCount = true
+            containerView.showsFPS = true
+            containerView.showsNodeCount = true
             #endif
         }
     }

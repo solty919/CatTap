@@ -24,10 +24,7 @@
 		408A563427B6753B008DB865 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563327B6753B008DB865 /* UIView+Extension.swift */; };
 		408A563727B67CA2008DB865 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563627B67CA2008DB865 /* ProfileViewController.swift */; };
 		40F9D87A27C38BA3002BD035 /* GestureTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9D87927C38BA3002BD035 /* GestureTutorialViewController.swift */; };
-		40F9D88B27C3A03E002BD035 /* Gifu.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9D88A27C3A03E002BD035 /* Gifu.xcframework */; };
 		40F9D88C27C3A03E002BD035 /* Gifu.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9D88A27C3A03E002BD035 /* Gifu.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		40F9D88F27C3A130002BD035 /* double_tap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 40F9D88E27C3A130002BD035 /* double_tap.gif */; };
-		40F9D89227C3AD59002BD035 /* two_finger.gif in Resources */ = {isa = PBXBuildFile; fileRef = 40F9D89127C3AD59002BD035 /* two_finger.gif */; };
 		40FDD8942785BE41003BE4DB /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8932785BE41003BE4DB /* TopViewController.swift */; };
 		40FDD8972785CA75003BE4DB /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8962785CA75003BE4DB /* SettingTableViewController.swift */; };
 		40FDD89A2785CD03003BE4DB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8992785CD03003BE4DB /* App.swift */; };
@@ -72,8 +69,6 @@
 		40F9D87927C38BA3002BD035 /* GestureTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTutorialViewController.swift; sourceTree = "<group>"; };
 		40F9D88027C39C32002BD035 /* Gifu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gifu.framework; path = Carthage/Build/iOS/Gifu.framework; sourceTree = "<group>"; };
 		40F9D88A27C3A03E002BD035 /* Gifu.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Gifu.xcframework; path = Carthage/Build/Gifu.xcframework; sourceTree = "<group>"; };
-		40F9D88E27C3A130002BD035 /* double_tap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = double_tap.gif; sourceTree = "<group>"; };
-		40F9D89127C3AD59002BD035 /* two_finger.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = two_finger.gif; sourceTree = "<group>"; };
 		40FDD8932785BE41003BE4DB /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		40FDD8962785CA75003BE4DB /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		40FDD8992785CD03003BE4DB /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -87,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F9D88B27C3A03E002BD035 /* Gifu.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,15 +169,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		40F9D89027C3AD46002BD035 /* Gif */ = {
-			isa = PBXGroup;
-			children = (
-				40F9D88E27C3A130002BD035 /* double_tap.gif */,
-				40F9D89127C3AD59002BD035 /* two_finger.gif */,
-			);
-			path = Gif;
-			sourceTree = "<group>";
-		};
 		40F9D89327CE21E8002BD035 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +216,6 @@
 		40FDD89B278721FE003BE4DB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				40F9D89027C3AD46002BD035 /* Gif */,
 				402905C127C362B4007AFE8C /* Video */,
 				40FDD89C27872212003BE4DB /* Sounds */,
 				405CFA4127856F3000E52840 /* Fonts */,
@@ -322,7 +306,6 @@
 				40FDD89E27872224003BE4DB /* papa.mp3 in Resources */,
 				405CFA4927856F4300E52840 /* NotoSansJP-Thin.otf in Resources */,
 				405CFA3427842C5500E52840 /* Assets.xcassets in Resources */,
-				40F9D88F27C3A130002BD035 /* double_tap.gif in Resources */,
 				405CFA4827856F4300E52840 /* NotoSansJP-Bold.otf in Resources */,
 				405CFA4A27856F4300E52840 /* NotoSansJP-Regular.otf in Resources */,
 				405CFA4B27856F4300E52840 /* NotoSansJP-Black.otf in Resources */,
@@ -330,7 +313,6 @@
 				402905C727C36781007AFE8C /* movie.mp4 in Resources */,
 				405CFA4C27856F4300E52840 /* NotoSansJP-Light.otf in Resources */,
 				405CFA4D27856F4300E52840 /* NotoSansJP-Medium.otf in Resources */,
-				40F9D89227C3AD59002BD035 /* two_finger.gif in Resources */,
 				405CFA3727842C5500E52840 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,7 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU45P949ZD;
