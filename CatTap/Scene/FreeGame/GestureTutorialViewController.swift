@@ -1,11 +1,10 @@
 import UIKit
-import Gifu
 
 final class GestureTutorialViewController: UIViewController {
 
     private var timer: Timer?
     
-    @IBOutlet private weak var doubleTapImageView: GIFImageView!
+    @IBOutlet private weak var doubleTapImageView: UIImageView!
     @IBOutlet private weak var isNeverShow: UISwitch!
     
     override func viewDidLoad() {
@@ -30,20 +29,16 @@ final class GestureTutorialViewController: UIViewController {
                                             y: toScale)
         
         Task {
-            await UIView.animate(duration: duration) { [weak self] in
-                guard let self = self else { return }
+            await UIView.animate(duration: duration) {
                 self.doubleTapImageView.transform = transformTo
             }
-            await UIView.animate(duration: duration) { [weak self] in
-                guard let self = self else { return }
+            await UIView.animate(duration: duration) {
                 self.doubleTapImageView.transform = .identity
             }
-            await UIView.animate(duration: duration) { [weak self] in
-                guard let self = self else { return }
+            await UIView.animate(duration: duration) {
                 self.doubleTapImageView.transform = transformTo
             }
-            await UIView.animate(duration: duration) { [weak self] in
-                guard let self = self else { return }
+            await UIView.animate(duration: duration) {
                 self.doubleTapImageView.transform = .identity
             }
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4006B8B027E62C1700A507E4 /* TesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006B8AF27E62C1700A507E4 /* TesterViewController.swift */; };
 		402905C727C36781007AFE8C /* movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 402905C627C36781007AFE8C /* movie.mp4 */; };
 		405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA2627842C5300E52840 /* AppDelegate.swift */; };
 		405CFA2F27842C5300E52840 /* FreeGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA2E27842C5300E52840 /* FreeGameViewController.swift */; };
@@ -24,7 +25,6 @@
 		408A563427B6753B008DB865 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563327B6753B008DB865 /* UIView+Extension.swift */; };
 		408A563727B67CA2008DB865 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563627B67CA2008DB865 /* ProfileViewController.swift */; };
 		40F9D87A27C38BA3002BD035 /* GestureTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9D87927C38BA3002BD035 /* GestureTutorialViewController.swift */; };
-		40F9D88C27C3A03E002BD035 /* Gifu.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9D88A27C3A03E002BD035 /* Gifu.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40FDD8942785BE41003BE4DB /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8932785BE41003BE4DB /* TopViewController.swift */; };
 		40FDD8972785CA75003BE4DB /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8962785CA75003BE4DB /* SettingTableViewController.swift */; };
 		40FDD89A2785CD03003BE4DB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8992785CD03003BE4DB /* App.swift */; };
@@ -40,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				40F9D88C27C3A03E002BD035 /* Gifu.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4006B8AF27E62C1700A507E4 /* TesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterViewController.swift; sourceTree = "<group>"; };
 		402905C627C36781007AFE8C /* movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie.mp4; sourceTree = "<group>"; };
 		405CFA2327842C5300E52840 /* CatTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405CFA2627842C5300E52840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,9 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4006B8AE27E62C0400A507E4 /* Tester */ = {
+			isa = PBXGroup;
+			children = (
+				4006B8AF27E62C1700A507E4 /* TesterViewController.swift */,
+			);
+			path = Tester;
+			sourceTree = "<group>";
+		};
 		402905BF27C36151007AFE8C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				4006B8AE27E62C0400A507E4 /* Tester */,
 				408A563527B67C86008DB865 /* Profile */,
 				40FDD8952785CA5E003BE4DB /* Setting */,
 				40FDD8922785BE32003BE4DB /* Top */,
@@ -335,6 +344,7 @@
 				405CFA3E2784477700E52840 /* BugScene.swift in Sources */,
 				40FDD8A32788691E003BE4DB /* SKScene+Extension.swift in Sources */,
 				405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */,
+				4006B8B027E62C1700A507E4 /* TesterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,10 +496,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU45P949ZD;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatTap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "たっぷ🐈";
@@ -526,10 +533,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU45P949ZD;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatTap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "たっぷ🐈";

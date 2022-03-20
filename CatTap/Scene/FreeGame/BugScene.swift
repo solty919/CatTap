@@ -10,9 +10,7 @@ final class BugScene: SKScene {
     private var waveEffect = SKShapeNode(rectOf: CGSize(width: 100, height: 100), cornerRadius: 1000)
     
     private var score = 0
-    private var random: Int {
-        Int.random(in: -10...10)
-    }
+    private var random: Int { Int.random(in: -10...10) }
     private var player: AVAudioPlayer?
     
     override func didMove(to view: SKView) {
@@ -55,6 +53,21 @@ final class BugScene: SKScene {
         physicsBody = border
         
         impulse()
+        pause()
+    }
+    
+    private func pause() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + Double(abs(random))) {
+            
+            self.children
+                .filter { $0.name == "bug" }
+                .forEach {
+                    $0.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+                    $0.physicsBody?.angularVelocity = 0
+                }
+            
+            self.pause()
+        }
     }
     
     private func impulse() {
