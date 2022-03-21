@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4006B8B027E62C1700A507E4 /* TesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006B8AF27E62C1700A507E4 /* TesterViewController.swift */; };
-		4006B8B327E8317900A507E4 /* komachi_0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4006B8B227E8317900A507E4 /* komachi_0.jpeg */; };
 		4006B8B627E837C800A507E4 /* NekoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006B8B527E837C800A507E4 /* NekoType.swift */; };
 		4006B8B827E83CD200A507E4 /* higeyoshi_0.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 4006B8B727E83CD200A507E4 /* higeyoshi_0.MOV */; };
 		4006B8BA27E83D5200A507E4 /* komachi_0.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 4006B8B927E83D5200A507E4 /* komachi_0.MOV */; };
@@ -27,6 +26,20 @@
 		405CFA4D27856F4300E52840 /* NotoSansJP-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4727856F4300E52840 /* NotoSansJP-Medium.otf */; };
 		408A563427B6753B008DB865 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563327B6753B008DB865 /* UIView+Extension.swift */; };
 		408A563727B67CA2008DB865 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563627B67CA2008DB865 /* ProfileViewController.swift */; };
+		40F4486A27E846FD00D2E4BE /* komachi_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486327E846FD00D2E4BE /* komachi_6.jpg */; };
+		40F4486B27E846FD00D2E4BE /* komachi_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486427E846FD00D2E4BE /* komachi_5.jpg */; };
+		40F4486C27E846FD00D2E4BE /* komachi_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486527E846FD00D2E4BE /* komachi_3.jpg */; };
+		40F4486D27E846FD00D2E4BE /* komachi_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486627E846FD00D2E4BE /* komachi_0.jpg */; };
+		40F4486E27E846FD00D2E4BE /* komachi_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486727E846FD00D2E4BE /* komachi_1.jpg */; };
+		40F4486F27E846FD00D2E4BE /* komachi_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486827E846FD00D2E4BE /* komachi_4.jpg */; };
+		40F4487027E846FD00D2E4BE /* komachi_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486927E846FD00D2E4BE /* komachi_2.jpg */; };
+		40F4487727E850E000D2E4BE /* higeyoshi_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487127E850E000D2E4BE /* higeyoshi_4.jpg */; };
+		40F4487827E850E000D2E4BE /* higeyoshi_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487227E850E000D2E4BE /* higeyoshi_1.jpg */; };
+		40F4487927E850E000D2E4BE /* higeyoshi_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487327E850E000D2E4BE /* higeyoshi_5.jpg */; };
+		40F4487A27E850E000D2E4BE /* higeyoshi_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487427E850E000D2E4BE /* higeyoshi_6.jpg */; };
+		40F4487B27E850E000D2E4BE /* higeyoshi_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487527E850E000D2E4BE /* higeyoshi_3.jpg */; };
+		40F4487C27E850E000D2E4BE /* higeyoshi_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487627E850E000D2E4BE /* higeyoshi_2.jpg */; };
+		40F4487E27E8515B00D2E4BE /* higeyoshi_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487D27E8515B00D2E4BE /* higeyoshi_0.jpg */; };
 		40F9D87A27C38BA3002BD035 /* GestureTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9D87927C38BA3002BD035 /* GestureTutorialViewController.swift */; };
 		40FDD8942785BE41003BE4DB /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8932785BE41003BE4DB /* TopViewController.swift */; };
 		40FDD8972785CA75003BE4DB /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8962785CA75003BE4DB /* SettingTableViewController.swift */; };
@@ -51,7 +64,6 @@
 
 /* Begin PBXFileReference section */
 		4006B8AF27E62C1700A507E4 /* TesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterViewController.swift; sourceTree = "<group>"; };
-		4006B8B227E8317900A507E4 /* komachi_0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_0.jpeg; sourceTree = "<group>"; };
 		4006B8B527E837C800A507E4 /* NekoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NekoType.swift; sourceTree = "<group>"; };
 		4006B8B727E83CD200A507E4 /* higeyoshi_0.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = higeyoshi_0.MOV; sourceTree = "<group>"; };
 		4006B8B927E83D5200A507E4 /* komachi_0.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = komachi_0.MOV; sourceTree = "<group>"; };
@@ -72,6 +84,20 @@
 		405CFA4E27856FD600E52840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		408A563327B6753B008DB865 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		408A563627B67CA2008DB865 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		40F4486327E846FD00D2E4BE /* komachi_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_6.jpg; sourceTree = "<group>"; };
+		40F4486427E846FD00D2E4BE /* komachi_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_5.jpg; sourceTree = "<group>"; };
+		40F4486527E846FD00D2E4BE /* komachi_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_3.jpg; sourceTree = "<group>"; };
+		40F4486627E846FD00D2E4BE /* komachi_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_0.jpg; sourceTree = "<group>"; };
+		40F4486727E846FD00D2E4BE /* komachi_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_1.jpg; sourceTree = "<group>"; };
+		40F4486827E846FD00D2E4BE /* komachi_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_4.jpg; sourceTree = "<group>"; };
+		40F4486927E846FD00D2E4BE /* komachi_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_2.jpg; sourceTree = "<group>"; };
+		40F4487127E850E000D2E4BE /* higeyoshi_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_4.jpg; sourceTree = "<group>"; };
+		40F4487227E850E000D2E4BE /* higeyoshi_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_1.jpg; sourceTree = "<group>"; };
+		40F4487327E850E000D2E4BE /* higeyoshi_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_5.jpg; sourceTree = "<group>"; };
+		40F4487427E850E000D2E4BE /* higeyoshi_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_6.jpg; sourceTree = "<group>"; };
+		40F4487527E850E000D2E4BE /* higeyoshi_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_3.jpg; sourceTree = "<group>"; };
+		40F4487627E850E000D2E4BE /* higeyoshi_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_2.jpg; sourceTree = "<group>"; };
+		40F4487D27E8515B00D2E4BE /* higeyoshi_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_0.jpg; sourceTree = "<group>"; };
 		40F9D87927C38BA3002BD035 /* GestureTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTutorialViewController.swift; sourceTree = "<group>"; };
 		40F9D88027C39C32002BD035 /* Gifu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gifu.framework; path = Carthage/Build/iOS/Gifu.framework; sourceTree = "<group>"; };
 		40F9D88A27C3A03E002BD035 /* Gifu.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Gifu.xcframework; path = Carthage/Build/Gifu.xcframework; sourceTree = "<group>"; };
@@ -106,7 +132,20 @@
 		4006B8B127E8315A00A507E4 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
-				4006B8B227E8317900A507E4 /* komachi_0.jpeg */,
+				40F4487D27E8515B00D2E4BE /* higeyoshi_0.jpg */,
+				40F4487227E850E000D2E4BE /* higeyoshi_1.jpg */,
+				40F4487627E850E000D2E4BE /* higeyoshi_2.jpg */,
+				40F4487527E850E000D2E4BE /* higeyoshi_3.jpg */,
+				40F4487127E850E000D2E4BE /* higeyoshi_4.jpg */,
+				40F4487327E850E000D2E4BE /* higeyoshi_5.jpg */,
+				40F4487427E850E000D2E4BE /* higeyoshi_6.jpg */,
+				40F4486627E846FD00D2E4BE /* komachi_0.jpg */,
+				40F4486727E846FD00D2E4BE /* komachi_1.jpg */,
+				40F4486927E846FD00D2E4BE /* komachi_2.jpg */,
+				40F4486527E846FD00D2E4BE /* komachi_3.jpg */,
+				40F4486827E846FD00D2E4BE /* komachi_4.jpg */,
+				40F4486427E846FD00D2E4BE /* komachi_5.jpg */,
+				40F4486327E846FD00D2E4BE /* komachi_6.jpg */,
 			);
 			path = Photo;
 			sourceTree = "<group>";
@@ -337,17 +376,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				405CFA3227842C5300E52840 /* Main.storyboard in Resources */,
+				40F4487827E850E000D2E4BE /* higeyoshi_1.jpg in Resources */,
 				40FDD89E27872224003BE4DB /* papa.mp3 in Resources */,
+				40F4487B27E850E000D2E4BE /* higeyoshi_3.jpg in Resources */,
+				40F4487C27E850E000D2E4BE /* higeyoshi_2.jpg in Resources */,
+				40F4486F27E846FD00D2E4BE /* komachi_4.jpg in Resources */,
+				40F4487727E850E000D2E4BE /* higeyoshi_4.jpg in Resources */,
+				40F4486D27E846FD00D2E4BE /* komachi_0.jpg in Resources */,
 				405CFA4927856F4300E52840 /* NotoSansJP-Thin.otf in Resources */,
+				40F4487027E846FD00D2E4BE /* komachi_2.jpg in Resources */,
+				40F4486E27E846FD00D2E4BE /* komachi_1.jpg in Resources */,
 				405CFA3427842C5500E52840 /* Assets.xcassets in Resources */,
-				4006B8B327E8317900A507E4 /* komachi_0.jpeg in Resources */,
+				40F4486B27E846FD00D2E4BE /* komachi_5.jpg in Resources */,
 				405CFA4827856F4300E52840 /* NotoSansJP-Bold.otf in Resources */,
+				40F4487A27E850E000D2E4BE /* higeyoshi_6.jpg in Resources */,
+				40F4486A27E846FD00D2E4BE /* komachi_6.jpg in Resources */,
+				40F4487927E850E000D2E4BE /* higeyoshi_5.jpg in Resources */,
 				4006B8BA27E83D5200A507E4 /* komachi_0.MOV in Resources */,
 				405CFA4A27856F4300E52840 /* NotoSansJP-Regular.otf in Resources */,
 				4006B8B827E83CD200A507E4 /* higeyoshi_0.MOV in Resources */,
+				40F4486C27E846FD00D2E4BE /* komachi_3.jpg in Resources */,
 				405CFA4B27856F4300E52840 /* NotoSansJP-Black.otf in Resources */,
 				405CFA4027844B7000E52840 /* BugScene.sks in Resources */,
 				405CFA4C27856F4300E52840 /* NotoSansJP-Light.otf in Resources */,
+				40F4487E27E8515B00D2E4BE /* higeyoshi_0.jpg in Resources */,
 				405CFA4D27856F4300E52840 /* NotoSansJP-Medium.otf in Resources */,
 				405CFA3727842C5500E52840 /* LaunchScreen.storyboard in Resources */,
 			);

@@ -9,6 +9,8 @@ final class TesterViewController: UIViewController {
     @IBOutlet private weak var higeyoshiDetailLabel: UILabel!
     @IBOutlet private weak var higeyoshiImageCollectionView: UICollectionView!
     
+    private var previewState: Neko = .komachi
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +33,8 @@ final class TesterViewController: UIViewController {
         
     }
     
-    private func showPreview(_ index: Int) {
+    private func showPreview(_ index: Int, type: Neko) {
+        previewState = type
         let previewController = QLPreviewController()
         previewController.dataSource = self
         previewController.delegate = self
@@ -87,8 +90,6 @@ extension TesterViewController: UICollectionViewDataSource {
             cell.imageView.image = UIImage(contentsOfFile: url.path)
         }
         
-        cell.addInteraction(UIContextMenuInteraction(delegate: self))
-        
         return cell
     }
     
@@ -97,21 +98,11 @@ extension TesterViewController: UICollectionViewDataSource {
 extension TesterViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        showPreview(indexPath.row)
-    }
-    
-}
-
-extension TesterViewController: UIContextMenuInteractionDelegate {
-    
-    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
-        return UIContextMenuConfiguration(identifier: nil,
-                                          previewProvider: nil) { elements in
-            let action = UIAction(title: "プレビュー",
-                                  image: UIImage(systemName: "doc")) { _ in
-                print("doc")
-            }
-            return UIMenu(title: "メニュー", children: [action])
+        if collectionView === komachiImageCollectionView {
+            showPreview(indexPath.row, type: .komachi)
+        }
+        if collectionView === higeyoshiImageCollectionView {
+            showPreview(indexPath.row, type: .higeyoshi)
         }
     }
     
@@ -120,11 +111,19 @@ extension TesterViewController: UIContextMenuInteractionDelegate {
 extension TesterViewController: QLPreviewControllerDataSource {
     
     func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
-        Neko.komachi.resources.count
+        switch previewState {
+        case .komachi: return Neko.komachi.resources.count
+        case .higeyoshi: return Neko.higeyoshi.resources.count
+        }
     }
     
     func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
-        Neko.komachi.resources[index] as QLPreviewItem
+        switch previewState {
+        case .komachi:
+            return Neko.komachi.resources[index] as QLPreviewItem
+        case .higeyoshi:
+            return Neko.higeyoshi.resources[index] as QLPreviewItem
+        }
     }
     
 }
