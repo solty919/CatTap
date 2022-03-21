@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -457,153 +458,289 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX5-gz-YvS">
-                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="756.00000000000011"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-p9-6yV">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1214"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1435.3333333333333"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vqB-f4-cma">
-                                                <rect key="frame" x="16" y="8" width="358" height="1206"/>
+                                                <rect key="frame" x="0.0" y="8" width="390" height="1427.3333333333333"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テストに協力してくれたメンバーを紹介します" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twK-bG-sjK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="24.666666666666668"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpW-vH-hvh">
-                                                        <rect key="frame" x="0.0" y="24.666666666666657" width="358" height="32"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-rk-Uqd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HGA-Yg-Vcz">
+                                                                <rect key="frame" x="16" y="0.0" width="358" height="40"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テストに協力してくれたメンバーを紹介します" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twK-bG-sjK">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="UfK-K7-nkc"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="HGA-Yg-Vcz" secondAttribute="bottom" id="6ha-4A-WqP"/>
+                                                            <constraint firstAttribute="trailing" secondItem="HGA-Yg-Vcz" secondAttribute="trailing" constant="16" id="T0D-E6-k6d"/>
+                                                            <constraint firstItem="HGA-Yg-Vcz" firstAttribute="leading" secondItem="9bw-rk-Uqd" secondAttribute="leading" constant="16" id="VEq-lY-ZSD"/>
+                                                            <constraint firstItem="HGA-Yg-Vcz" firstAttribute="top" secondItem="9bw-rk-Uqd" secondAttribute="top" id="doA-c1-JpU"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpW-vH-hvh" userLabel="Spacer">
+                                                        <rect key="frame" x="0.0" y="40" width="390" height="32"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="K5K-4i-JwC"/>
                                                         </constraints>
                                                     </view>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="komachi_main" translatesAutoresizingMaskIntoConstraints="NO" id="rnh-x4-8h3">
-                                                        <rect key="frame" x="0.0" y="56.666666666666657" width="358" height="239.99999999999997"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="240" id="MlM-yA-vh1"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="32"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </imageView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eD9-vg-DsC">
-                                                        <rect key="frame" x="0.0" y="296.66666666666669" width="358" height="4"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntv-tl-1yp" userLabel="Komachi">
+                                                        <rect key="frame" x="0.0" y="72" width="390" height="513.66666666666663"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4bJ-1B-oAy">
+                                                                <rect key="frame" x="16" y="0.0" width="358" height="513.66666666666663"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="komachi_main" translatesAutoresizingMaskIntoConstraints="NO" id="rnh-x4-8h3">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="204.66666666666666"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="rnh-x4-8h3" secondAttribute="height" multiplier="1.75:1" id="IPW-Sv-IEw"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="32"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eD9-vg-DsC">
+                                                                        <rect key="frame" x="0.0" y="204.66666666666669" width="358" height="4"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="4" id="edw-lG-IKz"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こまち" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oe-IL-ezL">
+                                                                        <rect key="frame" x="0.0" y="208.66666666666669" width="358" height="59"/>
+                                                                        <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="28"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0歳9ヶ月 / キジトラ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAS-N6-rwM">
+                                                                        <rect key="frame" x="0.0" y="267.66666666666669" width="358" height="17.666666666666686"/>
+                                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="12"/>
+                                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBp-HW-8na">
+                                                                        <rect key="frame" x="0.0" y="285.33333333333331" width="358" height="16"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="16" id="43y-4B-V1K"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご紹介" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h5-M8-X40">
+                                                                        <rect key="frame" x="0.0" y="301.33333333333337" width="358" height="32"/>
+                                                                        <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="22"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDu-jF-kYw">
+                                                                        <rect key="frame" x="0.0" y="333.33333333333337" width="358" height="8"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="8" id="69K-qV-a2c"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3g-or-o2M">
+                                                                        <rect key="frame" x="0.0" y="341.33333333333337" width="358" height="172.33333333333337"/>
+                                                                        <string key="text">元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫</string>
+                                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="17"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="4" id="edw-lG-IKz"/>
+                                                            <constraint firstAttribute="bottom" secondItem="4bJ-1B-oAy" secondAttribute="bottom" id="4ae-Wq-1Gh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="4bJ-1B-oAy" secondAttribute="trailing" constant="16" id="BfP-nW-bbQ"/>
+                                                            <constraint firstItem="4bJ-1B-oAy" firstAttribute="leading" secondItem="ntv-tl-1yp" secondAttribute="leading" constant="16" id="a8r-5F-VV6"/>
+                                                            <constraint firstItem="4bJ-1B-oAy" firstAttribute="top" secondItem="ntv-tl-1yp" secondAttribute="top" id="lUa-78-D7l"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こまち" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oe-IL-ezL">
-                                                        <rect key="frame" x="0.0" y="300.66666666666669" width="358" height="40.666666666666686"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="28"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0歳9ヶ月 / キジトラ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAS-N6-rwM">
-                                                        <rect key="frame" x="0.0" y="341.33333333333331" width="358" height="17.666666666666686"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="12"/>
-                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBp-HW-8na">
-                                                        <rect key="frame" x="0.0" y="359" width="358" height="16"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WxP-jD-FKj">
+                                                        <rect key="frame" x="0.0" y="585.66666666666663" width="390" height="120"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="16" id="43y-4B-V1K"/>
+                                                            <constraint firstAttribute="height" constant="120" id="1Tm-yh-XsD"/>
                                                         </constraints>
-                                                    </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご紹介" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h5-M8-X40">
-                                                        <rect key="frame" x="0.0" y="375" width="358" height="32"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="22"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDu-jF-kYw">
-                                                        <rect key="frame" x="0.0" y="407" width="358" height="8"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="8" id="69K-qV-a2c"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3g-or-o2M">
-                                                        <rect key="frame" x="0.0" y="415" width="358" height="172.33333333333337"/>
-                                                        <string key="text">元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫</string>
-                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="17"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dy-wb-uoh">
-                                                        <rect key="frame" x="0.0" y="587.33333333333337" width="358" height="88"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GMt-fQ-DkP">
+                                                            <size key="itemSize" width="120" height="100"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="tus-2j-ToZ" customClass="ImageCollectionCell" customModule="CatTap" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="10" width="120" height="100"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gnD-Xd-bfw">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="komachi_1" translatesAutoresizingMaskIntoConstraints="NO" id="haf-64-NtI">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="120" id="h6L-d4-YpO"/>
+                                                                                <constraint firstAttribute="height" constant="120" id="yiX-Ll-wrx"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="haf-64-NtI" firstAttribute="top" secondItem="gnD-Xd-bfw" secondAttribute="top" id="4R9-0e-u7t"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="haf-64-NtI" secondAttribute="bottom" id="G6s-SR-NBT"/>
+                                                                        <constraint firstItem="haf-64-NtI" firstAttribute="leading" secondItem="gnD-Xd-bfw" secondAttribute="leading" id="gZG-Lj-kzP"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="haf-64-NtI" secondAttribute="trailing" id="h0a-ea-h67"/>
+                                                                    </constraints>
+                                                                </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="imageView" destination="haf-64-NtI" id="Sav-NI-QgJ"/>
+                                                                </connections>
+                                                            </collectionViewCell>
+                                                        </cells>
+                                                    </collectionView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dy-wb-uoh" userLabel="Spacer">
+                                                        <rect key="frame" x="0.0" y="705.66666666666663" width="390" height="88"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="88" id="Vzn-lB-Sej"/>
                                                         </constraints>
                                                     </view>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="higeyoshi_main" translatesAutoresizingMaskIntoConstraints="NO" id="gC4-uR-IIb">
-                                                        <rect key="frame" x="0.0" y="675.33333333333337" width="358" height="240"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="240" id="vDU-zg-dfN"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="32"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </imageView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKK-BM-md2">
-                                                        <rect key="frame" x="0.0" y="915.33333333333326" width="358" height="4"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyq-Uj-YMq" userLabel="Higeyoshi">
+                                                        <rect key="frame" x="0.0" y="793.66666666666674" width="390" height="513.66666666666674"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-iH-gcA">
+                                                                <rect key="frame" x="16" y="0.0" width="358" height="513.66666666666663"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="higeyoshi_main" translatesAutoresizingMaskIntoConstraints="NO" id="7m6-fu-ftk">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="204.66666666666666"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="7m6-fu-ftk" secondAttribute="height" multiplier="1.75:1" id="1cz-t0-P6q"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="32"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="So7-IS-X6h">
+                                                                        <rect key="frame" x="0.0" y="204.66666666666663" width="358" height="4"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="4" id="pTI-5n-pR7"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ひげよし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBn-f0-nQR">
+                                                                        <rect key="frame" x="0.0" y="208.66666666666663" width="358" height="59"/>
+                                                                        <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="28"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0歳9ヶ月 / キジシロ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgP-Iq-9d2">
+                                                                        <rect key="frame" x="0.0" y="267.66666666666663" width="358" height="17.666666666666686"/>
+                                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="12"/>
+                                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLe-sR-TOk">
+                                                                        <rect key="frame" x="0.0" y="285.33333333333337" width="358" height="16"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="16" id="8W4-X1-HgK"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご紹介" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df8-Q9-Qp5">
+                                                                        <rect key="frame" x="0.0" y="301.33333333333337" width="358" height="32"/>
+                                                                        <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="22"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ijd-D1-Hju">
+                                                                        <rect key="frame" x="0.0" y="333.33333333333337" width="358" height="8"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="8" id="tRr-Dl-Q9w"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="If9-WN-xvb">
+                                                                        <rect key="frame" x="0.0" y="341.33333333333337" width="358" height="172.33333333333337"/>
+                                                                        <string key="text">元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫</string>
+                                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="17"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="4" id="VVj-gX-wow"/>
+                                                            <constraint firstItem="xSR-iH-gcA" firstAttribute="leading" secondItem="vyq-Uj-YMq" secondAttribute="leading" constant="16" id="0F9-gZ-9R6"/>
+                                                            <constraint firstAttribute="trailing" secondItem="xSR-iH-gcA" secondAttribute="trailing" constant="16" id="3cc-u2-6ud"/>
+                                                            <constraint firstAttribute="bottom" secondItem="xSR-iH-gcA" secondAttribute="bottom" id="8kM-9s-KJH"/>
+                                                            <constraint firstItem="xSR-iH-gcA" firstAttribute="top" secondItem="vyq-Uj-YMq" secondAttribute="top" id="Tt9-oB-WeP"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ひげよし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uq-DL-KKt">
-                                                        <rect key="frame" x="0.0" y="919.33333333333326" width="358" height="40.666666666666629"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="28"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0歳9ヶ月 / キジシロ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAA-ir-CJz">
-                                                        <rect key="frame" x="0.0" y="960" width="358" height="17.666666666666629"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="12"/>
-                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EL1-il-1W6">
-                                                        <rect key="frame" x="0.0" y="977.66666666666674" width="358" height="16"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kA4-IF-JD8">
+                                                        <rect key="frame" x="0.0" y="1307.3333333333333" width="390" height="120"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="16" id="I5n-ln-RgW"/>
+                                                            <constraint firstAttribute="height" constant="120" id="Wb3-cU-aRG"/>
                                                         </constraints>
-                                                    </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご紹介" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diJ-rk-0PD">
-                                                        <rect key="frame" x="0.0" y="993.66666666666674" width="358" height="32"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="22"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ogd-TY-enf">
-                                                        <rect key="frame" x="0.0" y="1025.6666666666667" width="358" height="8"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="8" id="4L8-XL-nFZ"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbh-ky-JMM">
-                                                        <rect key="frame" x="0.0" y="1033.6666666666667" width="358" height="172.33333333333326"/>
-                                                        <string key="text">元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫元保護猫</string>
-                                                        <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="17"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SiQ-Mg-mBR">
+                                                            <size key="itemSize" width="120" height="100"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="JSs-QU-NcW" customClass="ImageCollectionCell" customModule="CatTap" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="10" width="120" height="100"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gMN-MZ-dgX">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="komachi_1" translatesAutoresizingMaskIntoConstraints="NO" id="UN4-73-c6M">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="120" id="CeS-wq-Dbs"/>
+                                                                                <constraint firstAttribute="width" constant="120" id="WuF-91-apN"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="UN4-73-c6M" firstAttribute="leading" secondItem="gMN-MZ-dgX" secondAttribute="leading" id="JW3-rz-VE0"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="UN4-73-c6M" secondAttribute="bottom" id="g35-Gt-N6I"/>
+                                                                        <constraint firstItem="UN4-73-c6M" firstAttribute="top" secondItem="gMN-MZ-dgX" secondAttribute="top" id="gr5-ck-ffX"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="UN4-73-c6M" secondAttribute="trailing" id="pCD-va-GMb"/>
+                                                                    </constraints>
+                                                                </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="imageView" destination="UN4-73-c6M" id="ZR5-Zy-EPL"/>
+                                                                </connections>
+                                                            </collectionViewCell>
+                                                        </cells>
+                                                    </collectionView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="vqB-f4-cma" firstAttribute="leading" secondItem="2sO-p9-6yV" secondAttribute="leading" constant="16" id="7aK-Ms-DdO"/>
+                                            <constraint firstItem="vqB-f4-cma" firstAttribute="leading" secondItem="2sO-p9-6yV" secondAttribute="leading" id="7aK-Ms-DdO"/>
                                             <constraint firstItem="vqB-f4-cma" firstAttribute="top" secondItem="2sO-p9-6yV" secondAttribute="top" constant="8" id="mFY-td-bNF"/>
                                             <constraint firstAttribute="bottom" secondItem="vqB-f4-cma" secondAttribute="bottom" id="na6-5E-hBx"/>
-                                            <constraint firstAttribute="trailing" secondItem="vqB-f4-cma" secondAttribute="trailing" constant="16" id="wPz-di-nez"/>
+                                            <constraint firstAttribute="trailing" secondItem="vqB-f4-cma" secondAttribute="trailing" id="wPz-di-nez"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -630,8 +767,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="スペシャルサンクス" id="zmR-Zw-rS1"/>
                     <connections>
-                        <outlet property="higeyoshiDetailLabel" destination="qAA-ir-CJz" id="3tr-zM-r9d"/>
+                        <outlet property="higeyoshiDetailLabel" destination="RgP-Iq-9d2" id="dzz-ci-ZY1"/>
+                        <outlet property="higeyoshiImageCollectionView" destination="kA4-IF-JD8" id="g6C-SZ-OUl"/>
                         <outlet property="komachiDetailLabel" destination="vAS-N6-rwM" id="TZ8-68-Q9F"/>
+                        <outlet property="komachiImageCollectionView" destination="WxP-jD-FKj" id="183-u3-RcX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSI-PV-REI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -789,6 +928,7 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="higeyoshi_main" width="2048" height="1536"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="komachi_1" width="2048" height="1536"/>
         <image name="komachi_main" width="2048" height="1536"/>
         <image name="main_puni" width="490" height="265"/>
         <image name="side_puni_light" width="150" height="150"/>

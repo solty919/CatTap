@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4006B8B027E62C1700A507E4 /* TesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006B8AF27E62C1700A507E4 /* TesterViewController.swift */; };
-		402905C727C36781007AFE8C /* movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 402905C627C36781007AFE8C /* movie.mp4 */; };
+		4006B8B327E8317900A507E4 /* komachi_0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4006B8B227E8317900A507E4 /* komachi_0.jpeg */; };
+		4006B8B627E837C800A507E4 /* NekoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006B8B527E837C800A507E4 /* NekoType.swift */; };
+		4006B8B827E83CD200A507E4 /* higeyoshi_0.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 4006B8B727E83CD200A507E4 /* higeyoshi_0.MOV */; };
+		4006B8BA27E83D5200A507E4 /* komachi_0.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 4006B8B927E83D5200A507E4 /* komachi_0.MOV */; };
 		405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA2627842C5300E52840 /* AppDelegate.swift */; };
 		405CFA2F27842C5300E52840 /* FreeGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA2E27842C5300E52840 /* FreeGameViewController.swift */; };
 		405CFA3227842C5300E52840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA3027842C5300E52840 /* Main.storyboard */; };
@@ -48,7 +51,10 @@
 
 /* Begin PBXFileReference section */
 		4006B8AF27E62C1700A507E4 /* TesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterViewController.swift; sourceTree = "<group>"; };
-		402905C627C36781007AFE8C /* movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie.mp4; sourceTree = "<group>"; };
+		4006B8B227E8317900A507E4 /* komachi_0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_0.jpeg; sourceTree = "<group>"; };
+		4006B8B527E837C800A507E4 /* NekoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NekoType.swift; sourceTree = "<group>"; };
+		4006B8B727E83CD200A507E4 /* higeyoshi_0.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = higeyoshi_0.MOV; sourceTree = "<group>"; };
+		4006B8B927E83D5200A507E4 /* komachi_0.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = komachi_0.MOV; sourceTree = "<group>"; };
 		405CFA2327842C5300E52840 /* CatTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405CFA2627842C5300E52840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		405CFA2E27842C5300E52840 /* FreeGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeGameViewController.swift; sourceTree = "<group>"; };
@@ -91,9 +97,26 @@
 		4006B8AE27E62C0400A507E4 /* Tester */ = {
 			isa = PBXGroup;
 			children = (
+				4006B8B427E837BA00A507E4 /* Type */,
 				4006B8AF27E62C1700A507E4 /* TesterViewController.swift */,
 			);
 			path = Tester;
+			sourceTree = "<group>";
+		};
+		4006B8B127E8315A00A507E4 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				4006B8B227E8317900A507E4 /* komachi_0.jpeg */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		4006B8B427E837BA00A507E4 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				4006B8B527E837C800A507E4 /* NekoType.swift */,
+			);
+			path = Type;
 			sourceTree = "<group>";
 		};
 		402905BF27C36151007AFE8C /* Scene */ = {
@@ -111,7 +134,8 @@
 		402905C127C362B4007AFE8C /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				402905C627C36781007AFE8C /* movie.mp4 */,
+				4006B8B927E83D5200A507E4 /* komachi_0.MOV */,
+				4006B8B727E83CD200A507E4 /* higeyoshi_0.MOV */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -225,6 +249,7 @@
 		40FDD89B278721FE003BE4DB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4006B8B127E8315A00A507E4 /* Photo */,
 				402905C127C362B4007AFE8C /* Video */,
 				40FDD89C27872212003BE4DB /* Sounds */,
 				405CFA4127856F3000E52840 /* Fonts */,
@@ -315,11 +340,13 @@
 				40FDD89E27872224003BE4DB /* papa.mp3 in Resources */,
 				405CFA4927856F4300E52840 /* NotoSansJP-Thin.otf in Resources */,
 				405CFA3427842C5500E52840 /* Assets.xcassets in Resources */,
+				4006B8B327E8317900A507E4 /* komachi_0.jpeg in Resources */,
 				405CFA4827856F4300E52840 /* NotoSansJP-Bold.otf in Resources */,
+				4006B8BA27E83D5200A507E4 /* komachi_0.MOV in Resources */,
 				405CFA4A27856F4300E52840 /* NotoSansJP-Regular.otf in Resources */,
+				4006B8B827E83CD200A507E4 /* higeyoshi_0.MOV in Resources */,
 				405CFA4B27856F4300E52840 /* NotoSansJP-Black.otf in Resources */,
 				405CFA4027844B7000E52840 /* BugScene.sks in Resources */,
-				402905C727C36781007AFE8C /* movie.mp4 in Resources */,
 				405CFA4C27856F4300E52840 /* NotoSansJP-Light.otf in Resources */,
 				405CFA4D27856F4300E52840 /* NotoSansJP-Medium.otf in Resources */,
 				405CFA3727842C5500E52840 /* LaunchScreen.storyboard in Resources */,
@@ -341,6 +368,7 @@
 				40F9D87A27C38BA3002BD035 /* GestureTutorialViewController.swift in Sources */,
 				40FDD89A2785CD03003BE4DB /* App.swift in Sources */,
 				40FDD8A12788679E003BE4DB /* UIViewController+Extension.swift in Sources */,
+				4006B8B627E837C800A507E4 /* NekoType.swift in Sources */,
 				405CFA3E2784477700E52840 /* BugScene.swift in Sources */,
 				40FDD8A32788691E003BE4DB /* SKScene+Extension.swift in Sources */,
 				405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */,

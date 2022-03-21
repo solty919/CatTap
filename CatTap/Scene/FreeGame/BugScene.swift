@@ -49,8 +49,11 @@ final class BugScene: SKScene {
             pointLabel.text = "\(score)P"
         }
         
-        let border = SKPhysicsBody(edgeLoopFrom: frame)
-        physicsBody = border
+        let border = CGRect(x: frame.minX,
+                          y: frame.minY,
+                          width: frame.width + 160,
+                          height: frame.height + 160)
+        physicsBody = SKPhysicsBody(edgeLoopFrom: border)
         
         impulse()
         pause()
@@ -58,27 +61,23 @@ final class BugScene: SKScene {
     
     private func pause() {
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(abs(random))) {
-            
             self.children
                 .filter { $0.name == "bug" }
                 .forEach {
                     $0.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
                     $0.physicsBody?.angularVelocity = 0
                 }
-            
             self.pause()
         }
     }
     
     private func impulse() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            
             self.children
                 .filter { $0.name == "bug" }
                 .forEach {
                     $0.physicsBody?.applyImpulse(CGVector(dx: self.random * 100, dy: self.random * 100))
                 }
-            
             self.impulse()
         }
     }
