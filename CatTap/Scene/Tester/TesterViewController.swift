@@ -86,8 +86,8 @@ extension TesterViewController: UICollectionViewDataSource {
             url = Neko.higeyoshi.resources[indexPath.row]
         }
         
-        if let url = url {
-            cell.imageView.image = UIImage(contentsOfFile: url.path)
+        if let url = url, let image = UIImage(mediaUrl: url) {
+            cell.imageView.image = image
         }
         
         return cell
