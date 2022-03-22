@@ -2,11 +2,15 @@ import UIKit
 import QuickLook
 
 final class TesterViewController: UIViewController {
-
+    
+    @IBOutlet private weak var komachiHeight: NSLayoutConstraint?
     @IBOutlet private weak var komachiDetailLabel: UILabel!
+    @IBOutlet private weak var moreAppearKomachiButton: UIButton!
     @IBOutlet private weak var komachiImageCollectionView: UICollectionView!
     
+    @IBOutlet private weak var higeyoshiHeight: NSLayoutConstraint!
     @IBOutlet private weak var higeyoshiDetailLabel: UILabel!
+    @IBOutlet private weak var moreAppearHigeyoshiButton: UIButton!
     @IBOutlet private weak var higeyoshiImageCollectionView: UICollectionView!
     
     private var previewState: Neko = .komachi
@@ -20,19 +24,24 @@ final class TesterViewController: UIViewController {
         komachiImageCollectionView.contentInset = UIEdgeInsets(
             top: 0, left: 16, bottom: 0,right: 16)
         
+        higeyoshiDetailLabel.text = "\(age()) / キジシロ"
         higeyoshiImageCollectionView.dataSource = self
         higeyoshiImageCollectionView.delegate = self
         higeyoshiImageCollectionView.contentInset = UIEdgeInsets(
             top: 0, left: 16, bottom: 0,right: 16)
-        
-        higeyoshiDetailLabel.text = "\(age()) / キジシロ"
     }
     
-    @objc func previewAction(_ sender: UITapGestureRecognizer) {
-        print("タップ", sender)
-        
+    @IBAction private func moreAppearKomachiAction(_ sender: UIButton) {
+        guard let constraint = komachiHeight else { return }
+        NSLayoutConstraint.deactivate([constraint])
+        moreAppearKomachiButton.isHidden = true
     }
     
+    @IBAction private func moreAppearHigeyoshiAction(_ sender: UIButton) {
+        guard let constraint = higeyoshiHeight else { return }
+        NSLayoutConstraint.deactivate([constraint])
+        moreAppearHigeyoshiButton.isHidden = true
+    }
     private func showPreview(_ index: Int, type: Neko) {
         previewState = type
         let previewController = QLPreviewController()
