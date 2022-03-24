@@ -18,15 +18,21 @@ final class TesterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 120, height: 120)
+        
         komachiDetailLabel.text = "\(age()) / キジトラ"
         komachiImageCollectionView.dataSource = self
         komachiImageCollectionView.delegate = self
+        komachiImageCollectionView.collectionViewLayout = layout
         komachiImageCollectionView.contentInset = UIEdgeInsets(
             top: 0, left: 16, bottom: 0,right: 16)
         
         higeyoshiDetailLabel.text = "\(age()) / キジシロ"
         higeyoshiImageCollectionView.dataSource = self
         higeyoshiImageCollectionView.delegate = self
+        higeyoshiImageCollectionView.collectionViewLayout = layout
         higeyoshiImageCollectionView.contentInset = UIEdgeInsets(
             top: 0, left: 16, bottom: 0,right: 16)
     }
@@ -113,6 +119,14 @@ extension TesterViewController: UICollectionViewDelegate {
         if collectionView === higeyoshiImageCollectionView {
             showPreview(indexPath.row, type: .higeyoshi)
         }
+    }
+    
+}
+
+extension TesterViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: 120, height: 120)
     }
     
 }

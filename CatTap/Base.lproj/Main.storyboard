@@ -290,13 +290,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J53-Va-cYx">
-                                <rect key="frame" x="39" y="107.33333333333331" width="312" height="123"/>
+                                <rect key="frame" x="39" y="107" width="312" height="123.66666666666669"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LNP-Bz-Ooh">
-                                    <rect key="frame" x="0.0" y="0.0" width="312" height="123"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="312" height="124"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xeV-cr-B2Y">
-                                            <rect key="frame" x="16" y="24.000000000000014" width="280" height="75.333333333333329"/>
+                                            <rect key="frame" x="16" y="24" width="280" height="75.333333333333329"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="きゃっとたっぷ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-QP-b8o">
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="49.333333333333336"/>
@@ -305,7 +305,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="〜ねこのおもちゃアプリ〜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtN-3Z-0XA">
-                                                    <rect key="frame" x="0.0" y="53.333333333333314" width="280" height="22"/>
+                                                    <rect key="frame" x="0.0" y="53.333333333333343" width="280" height="22"/>
                                                     <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -458,7 +458,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX5-gz-YvS">
-                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="755.99999999999955"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-p9-6yV">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="4677.666666666667"/>
@@ -626,10 +626,6 @@
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="haf-64-NtI">
                                                                             <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="120" id="h6L-d4-YpO"/>
-                                                                                <constraint firstAttribute="height" constant="120" id="yiX-Ll-wrx"/>
-                                                                            </constraints>
                                                                             <userDefinedRuntimeAttributes>
                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                     <real key="value" value="8"/>
@@ -771,25 +767,21 @@
                                                             <constraint firstAttribute="height" constant="120" id="Wb3-cU-aRG"/>
                                                         </constraints>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SiQ-Mg-mBR">
-                                                            <size key="itemSize" width="120" height="100"/>
+                                                            <size key="itemSize" width="130" height="120"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="JSs-QU-NcW" customClass="ImageCollectionCell" customModule="CatTap" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="10" width="120" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gMN-MZ-dgX">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UN4-73-c6M">
                                                                             <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="120" id="CeS-wq-Dbs"/>
-                                                                                <constraint firstAttribute="width" constant="120" id="WuF-91-apN"/>
-                                                                            </constraints>
                                                                             <userDefinedRuntimeAttributes>
                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                     <real key="value" value="8"/>
@@ -798,10 +790,10 @@
                                                                         </imageView>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstItem="UN4-73-c6M" firstAttribute="leading" secondItem="gMN-MZ-dgX" secondAttribute="leading" id="JW3-rz-VE0"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="UN4-73-c6M" secondAttribute="bottom" id="g35-Gt-N6I"/>
-                                                                        <constraint firstItem="UN4-73-c6M" firstAttribute="top" secondItem="gMN-MZ-dgX" secondAttribute="top" id="gr5-ck-ffX"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="UN4-73-c6M" secondAttribute="trailing" id="pCD-va-GMb"/>
+                                                                        <constraint firstItem="UN4-73-c6M" firstAttribute="leading" secondItem="gMN-MZ-dgX" secondAttribute="leading" id="AWL-hC-y4J"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="UN4-73-c6M" secondAttribute="bottom" id="JhH-tf-Iq3"/>
+                                                                        <constraint firstItem="UN4-73-c6M" firstAttribute="top" secondItem="gMN-MZ-dgX" secondAttribute="top" id="LUh-xc-A2O"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="UN4-73-c6M" secondAttribute="trailing" id="lCY-nw-pcd"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
                                                                 <connections>
