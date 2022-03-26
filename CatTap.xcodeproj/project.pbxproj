@@ -575,7 +575,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatTap/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "たっぷ🐈";
+				INFOPLIST_KEY_CFBundleDisplayName = "きゃっぷ🐈";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -612,7 +612,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatTap/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "たっぷ🐈";
+				INFOPLIST_KEY_CFBundleDisplayName = "きゃっぷ🐈";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
