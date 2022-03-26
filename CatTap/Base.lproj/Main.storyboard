@@ -290,13 +290,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J53-Va-cYx">
-                                <rect key="frame" x="39" y="106.33333333333331" width="312" height="124.66666666666669"/>
+                                <rect key="frame" x="39" y="106.66666666666669" width="312" height="124"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LNP-Bz-Ooh">
-                                    <rect key="frame" x="0.0" y="0.0" width="312" height="125"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="312" height="124"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xeV-cr-B2Y">
-                                            <rect key="frame" x="16" y="24.000000000000014" width="280" height="76.333333333333329"/>
+                                            <rect key="frame" x="16" y="23.999999999999986" width="280" height="76.333333333333329"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="きゃっぷ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-QP-b8o">
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="49.333333333333336"/>
@@ -305,7 +305,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtN-3Z-0XA">
-                                                    <rect key="frame" x="0.0" y="53.333333333333314" width="280" height="23"/>
+                                                    <rect key="frame" x="0.0" y="53.333333333333343" width="280" height="23"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="🐈">
                                                             <attributes>
@@ -500,7 +500,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX5-gz-YvS">
-                                <rect key="frame" x="0.0" y="88" width="390" height="755.99999999999955"/>
+                                <rect key="frame" x="0.0" y="140" width="390" height="704"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-p9-6yV">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="4677.666666666667"/>
@@ -906,7 +906,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2本指タブルタップで戻る" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEK-NB-Vb0">
-                                <rect key="frame" x="16" y="795.66666666666663" width="358" height="14.333333333333371"/>
+                                <rect key="frame" x="16" y="791.66666666666663" width="358" height="14.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -918,7 +918,7 @@
                         <constraints>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="bnJ-9Z-u4W" secondAttribute="trailing" id="EEd-hb-Ox9"/>
                             <constraint firstItem="bnJ-9Z-u4W" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="JKs-h2-CWR"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="VEK-NB-Vb0" secondAttribute="bottom" id="JY2-yz-KnJ"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="VEK-NB-Vb0" secondAttribute="bottom" constant="4" id="JY2-yz-KnJ"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="VEK-NB-Vb0" secondAttribute="trailing" constant="16" id="fAp-Ce-jth"/>
                             <constraint firstAttribute="bottom" secondItem="bnJ-9Z-u4W" secondAttribute="bottom" id="k48-fH-6j6"/>
                             <constraint firstItem="VEK-NB-Vb0" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="16" id="vKG-ky-5pZ"/>
