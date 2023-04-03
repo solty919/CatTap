@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5bx-hd-i2h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5bx-hd-i2h">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,7 +24,7 @@
             <objects>
                 <navigationController id="5bx-hd-i2h" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="T7J-b3-TTA">
-                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -45,7 +46,7 @@
                             <tableViewSection headerTitle="おもちゃの大きさ" id="r09-p8-qjd">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="w7S-yh-4tr">
-                                        <rect key="frame" x="20" y="31.666666030883789" width="350" height="63"/>
+                                        <rect key="frame" x="20" y="38" width="350" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w7S-yh-4tr" id="c15-14-Ldl">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="63"/>
@@ -76,7 +77,7 @@
                             <tableViewSection headerTitle="おもちゃの見た目" id="qPL-YD-j8A">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YDT-8K-wBm">
-                                        <rect key="frame" x="20" y="144.33333206176758" width="350" height="63"/>
+                                        <rect key="frame" x="20" y="157" width="350" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YDT-8K-wBm" id="bUx-1P-8Tt">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="63"/>
@@ -107,23 +108,23 @@
                             <tableViewSection headerTitle="おもちゃの数" id="nLI-I6-oyt">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fj0-9o-QCy">
-                                        <rect key="frame" x="20" y="256.99999809265137" width="350" height="92"/>
+                                        <rect key="frame" x="20" y="276" width="350" height="95.666664123535156"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fj0-9o-QCy" id="tiG-pL-ayD">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="92"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="95.666664123535156"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uZW-ue-HIh">
-                                                    <rect key="frame" x="32" y="16" width="286" height="60"/>
+                                                    <rect key="frame" x="32" y="15.999999999999996" width="286" height="63.666666666666657"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jX-A3-al3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="33.666666666666664"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="sRH-VP-oIf">
-                                                            <rect key="frame" x="-2" y="30" width="290" height="31"/>
+                                                            <rect key="frame" x="-2" y="33.666666666666664" width="290" height="30.999999999999993"/>
                                                             <connections>
                                                                 <action selector="toyCountChangeAction:" destination="Qkx-L5-C4B" eventType="valueChanged" id="rb4-1L-AOn"/>
                                                             </connections>
@@ -144,7 +145,7 @@
                             <tableViewSection headerTitle="透明化" footerTitle="時間経過でおもちゃが消えて、また出てくる設定ができます。" id="DZt-Gn-IBb">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="43E-WF-JuK">
-                                        <rect key="frame" x="20" y="405.99999809265137" width="350" height="63"/>
+                                        <rect key="frame" x="20" y="434.99999618530273" width="350" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="43E-WF-JuK" id="EOh-2W-uub">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="63"/>
@@ -154,7 +155,7 @@
                                                     <rect key="frame" x="32" y="16" width="286" height="31"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="透明化" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0Y-hM-0UL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="43" height="31"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -177,29 +178,29 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="rxa-15-8tO">
-                                        <rect key="frame" x="20" y="468.99999809265137" width="350" height="121.33333587646484"/>
+                                        <rect key="frame" x="20" y="497.99999618530273" width="350" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rxa-15-8tO" id="W3A-03-tNG">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="121.33333587646484"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="126"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yPB-0D-dJG">
-                                                    <rect key="frame" x="32" y="16" width="286" height="89.333333333333329"/>
+                                                    <rect key="frame" x="32" y="16" width="286" height="94"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jy-8F-Lwu">
-                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="33.666666666666664"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="KNK-PD-JeK">
-                                                            <rect key="frame" x="-2" y="38" width="290" height="31"/>
+                                                            <rect key="frame" x="-2" y="41.666666666666664" width="290" height="30.999999999999993"/>
                                                             <connections>
                                                                 <action selector="toyIntervalTimeChangeAction:" destination="Qkx-L5-C4B" eventType="valueChanged" id="TAl-DX-qCo"/>
                                                             </connections>
                                                         </slider>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消えるまでの時間を設定します" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spy-Ua-rxV">
-                                                            <rect key="frame" x="0.0" y="76" width="286" height="13.333333333333329"/>
+                                                            <rect key="frame" x="0.0" y="79.666666666666671" width="286" height="14.333333333333329"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
@@ -216,29 +217,29 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ItM-vS-nU3">
-                                        <rect key="frame" x="20" y="590.33333396911621" width="350" height="121.33333587646484"/>
+                                        <rect key="frame" x="20" y="623.99999618530273" width="350" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ItM-vS-nU3" id="u6L-eD-jw9">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="121.33333587646484"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="126"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5ox-qy-7O5">
-                                                    <rect key="frame" x="32" y="16" width="286" height="89.333333333333329"/>
+                                                    <rect key="frame" x="32" y="16" width="286" height="94"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJP-yv-PW7">
-                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="33.666666666666664"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="JfI-D6-PuU">
-                                                            <rect key="frame" x="-2" y="38" width="290" height="31"/>
+                                                            <rect key="frame" x="-2" y="41.666666666666664" width="290" height="30.999999999999993"/>
                                                             <connections>
                                                                 <action selector="toyHiddenTimeChangeAction:" destination="Qkx-L5-C4B" eventType="valueChanged" id="WFE-g7-KQ3"/>
                                                             </connections>
                                                         </slider>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消えている時間を設定します" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEB-1X-XKD">
-                                                            <rect key="frame" x="0.0" y="76" width="286" height="13.333333333333329"/>
+                                                            <rect key="frame" x="0.0" y="79.666666666666671" width="286" height="14.333333333333329"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
@@ -290,13 +291,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J53-Va-cYx">
-                                <rect key="frame" x="39" y="108" width="312" height="121.66666666666669"/>
+                                <rect key="frame" x="39" y="109.33333333333331" width="312" height="118.66666666666669"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LNP-Bz-Ooh">
-                                    <rect key="frame" x="0.0" y="0.0" width="312" height="122"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="312" height="119"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xeV-cr-B2Y">
-                                            <rect key="frame" x="16" y="24" width="280" height="73.666666666666671"/>
+                                            <rect key="frame" x="16" y="24.000000000000014" width="280" height="70.333333333333329"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="きゃっぷ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-QP-b8o">
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="49.333333333333336"/>
@@ -305,7 +306,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtN-3Z-0XA">
-                                                    <rect key="frame" x="0.0" y="53.333333333333343" width="280" height="20.333333333333329"/>
+                                                    <rect key="frame" x="0.0" y="53.333333333333314" width="280" height="17"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="🐈">
                                                             <attributes>
@@ -315,25 +316,25 @@
                                                         </fragment>
                                                         <fragment content="きゃっと">
                                                             <attributes>
-                                                                <font key="NSFont" size="14" name="NotoSansJP-Bold"/>
+                                                                <font key="NSFont" metaFont="system" size="14"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                         <fragment content="が">
                                                             <attributes>
-                                                                <font key="NSFont" size="8" name="NotoSansJP-Bold"/>
+                                                                <font key="NSFont" metaFont="system" size="8"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                         <fragment content="たっぷ">
                                                             <attributes>
-                                                                <font key="NSFont" size="14" name="NotoSansJP-Bold"/>
+                                                                <font key="NSFont" metaFont="system" size="14"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                         <fragment content="で遊ぶアプリ">
                                                             <attributes>
-                                                                <font key="NSFont" size="8" name="NotoSansJP-Bold"/>
+                                                                <font key="NSFont" metaFont="system" size="8"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -494,7 +495,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX5-gz-YvS">
-                                <rect key="frame" x="0.0" y="140" width="390" height="704"/>
+                                <rect key="frame" x="0.0" y="143" width="390" height="701"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-p9-6yV">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="4677.666666666667"/>
@@ -613,7 +614,7 @@
                                                                         <rect key="frame" x="0.0" y="562.99999999999989" width="358" height="1391.333333333333"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRd-pu-xxc">
-                                                                                <rect key="frame" x="262.33333333333331" y="0.0" width="95.666666666666686" height="1391.3333333333333"/>
+                                                                                <rect key="frame" x="247.33333333333329" y="0.0" width="110.66666666666666" height="1391.3333333333333"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="plain" title="もっと見る"/>
                                                                                 <connections>
@@ -769,7 +770,7 @@
                                                                         <rect key="frame" x="0.0" y="562.99999999999989" width="358" height="1742.333333333333"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahU-4q-dDk">
-                                                                                <rect key="frame" x="262.33333333333331" y="0.0" width="95.666666666666686" height="1742.3333333333333"/>
+                                                                                <rect key="frame" x="247.33333333333329" y="0.0" width="110.66666666666666" height="1742.3333333333333"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="plain" title="もっと見る"/>
                                                                                 <connections>
@@ -947,10 +948,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nz9-tR-k4k">
-                                <rect key="frame" x="43" y="214.66666666666663" width="304" height="415"/>
+                                <rect key="frame" x="43" y="211.33333333333334" width="304" height="421.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="OFN-1U-NIj">
-                                        <rect key="frame" x="32" y="16" width="240" height="383"/>
+                                        <rect key="frame" x="32" y="16" width="240" height="389.33333333333331"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="double_tap" translatesAutoresizingMaskIntoConstraints="NO" id="KUs-Xg-rgY">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="80"/>
@@ -960,7 +961,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-SJ-So2">
-                                                <rect key="frame" x="0.0" y="112.00000000000003" width="240" height="36"/>
+                                                <rect key="frame" x="0.0" y="111.99999999999996" width="240" height="42.333333333333329"/>
                                                 <string key="text">2本指ダブルタップで
 トップ画面へ戻ります</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -968,14 +969,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYn-fs-9n4">
-                                                <rect key="frame" x="0.0" y="180.00000000000003" width="240" height="64"/>
+                                                <rect key="frame" x="0.0" y="186.33333333333334" width="240" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="xPp-I2-Gc3"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="Prc-nZ-tuf">
-                                                <rect key="frame" x="0.0" y="276" width="240" height="31"/>
+                                                <rect key="frame" x="0.0" y="282.33333333333337" width="240" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以降表示しない" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veR-RR-pIF">
                                                         <rect key="frame" x="0.0" y="0.0" width="127" height="31"/>
@@ -989,7 +990,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQp-cG-kyd">
-                                                <rect key="frame" x="0.0" y="339" width="240" height="44"/>
+                                                <rect key="frame" x="0.0" y="345.33333333333326" width="240" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="tdK-U0-MH0"/>
                                                 </constraints>
@@ -1035,9 +1036,9 @@
     </scenes>
     <resources>
         <image name="double_tap" width="90" height="90"/>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="higeyoshi_main" width="2048" height="1536"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="komachi_main" width="2048" height="1536"/>
         <image name="main_puni" width="490" height="265"/>
         <image name="side_puni_light" width="150" height="150"/>

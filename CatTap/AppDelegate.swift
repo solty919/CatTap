@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  CatTap
-//
-//  Created by Kazuki Hayashida on 2022/01/04.
-//
-
 import UIKit
 
 @main

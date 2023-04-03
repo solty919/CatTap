@@ -11,6 +11,7 @@
 		4006B8B627E837C800A507E4 /* NekoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006B8B527E837C800A507E4 /* NekoType.swift */; };
 		4006B8B827E83CD200A507E4 /* higeyoshi_0.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 4006B8B727E83CD200A507E4 /* higeyoshi_0.MOV */; };
 		4006B8BA27E83D5200A507E4 /* komachi_0.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 4006B8B927E83D5200A507E4 /* komachi_0.MOV */; };
+		40330EE929DA80FF00A12E28 /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40330EE829DA80FF00A12E28 /* DateFormatter+.swift */; };
 		405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA2627842C5300E52840 /* AppDelegate.swift */; };
 		405CFA2F27842C5300E52840 /* FreeGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA2E27842C5300E52840 /* FreeGameViewController.swift */; };
 		405CFA3227842C5300E52840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA3027842C5300E52840 /* Main.storyboard */; };
@@ -24,7 +25,7 @@
 		405CFA4B27856F4300E52840 /* NotoSansJP-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4527856F4300E52840 /* NotoSansJP-Black.otf */; };
 		405CFA4C27856F4300E52840 /* NotoSansJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4627856F4300E52840 /* NotoSansJP-Light.otf */; };
 		405CFA4D27856F4300E52840 /* NotoSansJP-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4727856F4300E52840 /* NotoSansJP-Medium.otf */; };
-		408A563427B6753B008DB865 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563327B6753B008DB865 /* UIView+Extension.swift */; };
+		408A563427B6753B008DB865 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563327B6753B008DB865 /* UIView+.swift */; };
 		408A563727B67CA2008DB865 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563627B67CA2008DB865 /* ProfileViewController.swift */; };
 		40F4486A27E846FD00D2E4BE /* komachi_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486327E846FD00D2E4BE /* komachi_6.jpg */; };
 		40F4486B27E846FD00D2E4BE /* komachi_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486427E846FD00D2E4BE /* komachi_5.jpg */; };
@@ -40,14 +41,14 @@
 		40F4487B27E850E000D2E4BE /* higeyoshi_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487527E850E000D2E4BE /* higeyoshi_3.jpg */; };
 		40F4487C27E850E000D2E4BE /* higeyoshi_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487627E850E000D2E4BE /* higeyoshi_2.jpg */; };
 		40F4487E27E8515B00D2E4BE /* higeyoshi_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4487D27E8515B00D2E4BE /* higeyoshi_0.jpg */; };
-		40F4488027E854C600D2E4BE /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4487F27E854C600D2E4BE /* UIImage+Extension.swift */; };
+		40F4488027E854C600D2E4BE /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4487F27E854C600D2E4BE /* UIImage+.swift */; };
 		40F9D87A27C38BA3002BD035 /* GestureTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9D87927C38BA3002BD035 /* GestureTutorialViewController.swift */; };
 		40FDD8942785BE41003BE4DB /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8932785BE41003BE4DB /* TopViewController.swift */; };
 		40FDD8972785CA75003BE4DB /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8962785CA75003BE4DB /* SettingTableViewController.swift */; };
 		40FDD89A2785CD03003BE4DB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8992785CD03003BE4DB /* App.swift */; };
 		40FDD89E27872224003BE4DB /* papa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40FDD89D27872224003BE4DB /* papa.mp3 */; };
-		40FDD8A12788679E003BE4DB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8A02788679E003BE4DB /* UIViewController+Extension.swift */; };
-		40FDD8A32788691E003BE4DB /* SKScene+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8A22788691E003BE4DB /* SKScene+Extension.swift */; };
+		40FDD8A12788679E003BE4DB /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8A02788679E003BE4DB /* UIViewController+.swift */; };
+		40FDD8A32788691E003BE4DB /* SKScene+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDD8A22788691E003BE4DB /* SKScene+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +69,7 @@
 		4006B8B527E837C800A507E4 /* NekoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NekoType.swift; sourceTree = "<group>"; };
 		4006B8B727E83CD200A507E4 /* higeyoshi_0.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = higeyoshi_0.MOV; sourceTree = "<group>"; };
 		4006B8B927E83D5200A507E4 /* komachi_0.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = komachi_0.MOV; sourceTree = "<group>"; };
+		40330EE829DA80FF00A12E28 /* DateFormatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
 		405CFA2327842C5300E52840 /* CatTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405CFA2627842C5300E52840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		405CFA2E27842C5300E52840 /* FreeGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeGameViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		405CFA4627856F4300E52840 /* NotoSansJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Light.otf"; sourceTree = "<group>"; };
 		405CFA4727856F4300E52840 /* NotoSansJP-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Medium.otf"; sourceTree = "<group>"; };
 		405CFA4E27856FD600E52840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		408A563327B6753B008DB865 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		408A563327B6753B008DB865 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		408A563627B67CA2008DB865 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		40F4486327E846FD00D2E4BE /* komachi_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_6.jpg; sourceTree = "<group>"; };
 		40F4486427E846FD00D2E4BE /* komachi_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_5.jpg; sourceTree = "<group>"; };
@@ -99,7 +101,7 @@
 		40F4487527E850E000D2E4BE /* higeyoshi_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_3.jpg; sourceTree = "<group>"; };
 		40F4487627E850E000D2E4BE /* higeyoshi_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_2.jpg; sourceTree = "<group>"; };
 		40F4487D27E8515B00D2E4BE /* higeyoshi_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = higeyoshi_0.jpg; sourceTree = "<group>"; };
-		40F4487F27E854C600D2E4BE /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		40F4487F27E854C600D2E4BE /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		40F9D87927C38BA3002BD035 /* GestureTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTutorialViewController.swift; sourceTree = "<group>"; };
 		40F9D88027C39C32002BD035 /* Gifu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gifu.framework; path = Carthage/Build/iOS/Gifu.framework; sourceTree = "<group>"; };
 		40F9D88A27C3A03E002BD035 /* Gifu.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Gifu.xcframework; path = Carthage/Build/Gifu.xcframework; sourceTree = "<group>"; };
@@ -107,8 +109,8 @@
 		40FDD8962785CA75003BE4DB /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		40FDD8992785CD03003BE4DB /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		40FDD89D27872224003BE4DB /* papa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = papa.mp3; sourceTree = "<group>"; };
-		40FDD8A02788679E003BE4DB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		40FDD8A22788691E003BE4DB /* SKScene+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+Extension.swift"; sourceTree = "<group>"; };
+		40FDD8A02788679E003BE4DB /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		40FDD8A22788691E003BE4DB /* SKScene+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,10 +303,11 @@
 		40FDD89F27886777003BE4DB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				40FDD8A02788679E003BE4DB /* UIViewController+Extension.swift */,
-				408A563327B6753B008DB865 /* UIView+Extension.swift */,
-				40FDD8A22788691E003BE4DB /* SKScene+Extension.swift */,
-				40F4487F27E854C600D2E4BE /* UIImage+Extension.swift */,
+				408A563327B6753B008DB865 /* UIView+.swift */,
+				40330EE829DA80FF00A12E28 /* DateFormatter+.swift */,
+				40FDD8A02788679E003BE4DB /* UIViewController+.swift */,
+				40FDD8A22788691E003BE4DB /* SKScene+.swift */,
+				40F4487F27E854C600D2E4BE /* UIImage+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -408,17 +411,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				40FDD8972785CA75003BE4DB /* SettingTableViewController.swift in Sources */,
-				40F4488027E854C600D2E4BE /* UIImage+Extension.swift in Sources */,
+				40F4488027E854C600D2E4BE /* UIImage+.swift in Sources */,
 				40FDD8942785BE41003BE4DB /* TopViewController.swift in Sources */,
 				408A563727B67CA2008DB865 /* ProfileViewController.swift in Sources */,
 				405CFA2F27842C5300E52840 /* FreeGameViewController.swift in Sources */,
-				408A563427B6753B008DB865 /* UIView+Extension.swift in Sources */,
+				408A563427B6753B008DB865 /* UIView+.swift in Sources */,
 				40F9D87A27C38BA3002BD035 /* GestureTutorialViewController.swift in Sources */,
 				40FDD89A2785CD03003BE4DB /* App.swift in Sources */,
-				40FDD8A12788679E003BE4DB /* UIViewController+Extension.swift in Sources */,
+				40FDD8A12788679E003BE4DB /* UIViewController+.swift in Sources */,
+				40330EE929DA80FF00A12E28 /* DateFormatter+.swift in Sources */,
 				4006B8B627E837C800A507E4 /* NekoType.swift in Sources */,
 				405CFA3E2784477700E52840 /* BugScene.swift in Sources */,
-				40FDD8A32788691E003BE4DB /* SKScene+Extension.swift in Sources */,
+				40FDD8A32788691E003BE4DB /* SKScene+.swift in Sources */,
 				405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */,
 				4006B8B027E62C1700A507E4 /* TesterViewController.swift in Sources */,
 			);
