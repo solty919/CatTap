@@ -101,7 +101,7 @@ final class BugScene: SKScene {
     
     private func bugTouchAction(atPoint position : CGPoint) {
         
-        hapticFeedback()
+        Feedback.impact()
         
         if let url = Bundle.main.url(forResource: "papa", withExtension: "mp3") {
             player = try? AVAudioPlayer(contentsOf: url)

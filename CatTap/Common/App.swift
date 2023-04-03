@@ -4,8 +4,6 @@ final class App {
     
     static let shared = App()
     
-    private init() {}
-    
     var size: ToySize = .small
     var kind: ToyKind = .bug
     var count = 1
@@ -13,9 +11,8 @@ final class App {
     var intervalTime = 5
     var hiddenTime = 5
     
-    private let isNeverShowKey = "isNeverShowKey"
-    var isNeverShow: Bool {
-        get { UserDefaults.standard.bool(forKey: isNeverShowKey) }
-        set { UserDefaults.standard.set(newValue, forKey: isNeverShowKey) }
-    }
+    @Storage("isNeverShowKey", defaultValue: false)
+    var isNeverShow: Bool
+    
+    private init() {}
 }
