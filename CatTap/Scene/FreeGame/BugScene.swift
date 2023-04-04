@@ -7,9 +7,14 @@ final class BugScene: SKScene {
     private lazy var bug = childNode(withName: "bug") as? SKSpriteNode
     private lazy var pointEffect = childNode(withName: "pointEffect") as? SKLabelNode
     private lazy var pointLabel = childNode(withName: "pointLabel") as? SKLabelNode
+    private lazy var bestLabel = childNode(withName: "bestLabel") as? SKLabelNode
     private var waveEffect = SKShapeNode(rectOf: CGSize(width: 100, height: 100), cornerRadius: 1000)
     
-    private var score = 0
+    var score = 0 { didSet {
+        if App.shared.bestScore < score {
+            App.shared.bestScore = score
+        }
+    }}
     private var random: Int { Int.random(in: -10...10) }
     private var player: AVAudioPlayer?
     
@@ -47,6 +52,10 @@ final class BugScene: SKScene {
         
         if let pointLabel = pointLabel {
             pointLabel.text = "\(score)P"
+        }
+        
+        if let bestLabel = bestLabel {
+            bestLabel.text = "\(App.shared.bestScore)P"
         }
         
         let border = CGRect(x: frame.minX,

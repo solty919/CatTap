@@ -1,6 +1,7 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import StoreKit
 
 final class FreeGameViewController: UIViewController {
 
@@ -39,6 +40,24 @@ final class FreeGameViewController: UIViewController {
     }
     
     @IBAction func tapGesture(_ sender: UITapGestureRecognizer) {
+        if
+            let containerView = containerView as? SKView,
+            let scene = containerView.scene as? BugScene
+        {
+            if 3 < scene.score {
+                App.shared.satisfyScore = App.shared.satisfyScore + 1
+            }
+            
+            if 3 < App.shared.satisfyScore {
+                if !App.shared.isAppReview {
+                    if let scene = view.window?.windowScene {
+                        SKStoreReviewController.requestReview(in: scene)
+                    }
+                    App.shared.isAppReview = true
+                }
+            }
+        }
+        
         navigationController?.popViewController(animated: true)
     }
     
