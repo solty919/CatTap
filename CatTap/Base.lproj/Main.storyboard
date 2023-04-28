@@ -43,10 +43,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
+                            <tableViewSection headerTitle="録画" footerTitle="遊んでいるねこの顔をフロントカメラにて撮影します" id="prs-nb-sSl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="q9S-GT-N4x">
+                                        <rect key="frame" x="20" y="38" width="350" height="93.333335876464844"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q9S-GT-N4x" id="1Ns-L2-eT5">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="93.333335876464844"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="E6m-mm-F3u">
+                                                    <rect key="frame" x="32" y="16.000000000000004" width="286" height="61.333333333333343"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="BBU-eR-JvQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="録画する" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gs-UO-Z31">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="69.333333333333329" height="31"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ESt-tW-Elc">
+                                                                    <rect key="frame" x="237" y="0.0" width="51" height="31"/>
+                                                                    <connections>
+                                                                        <action selector="recordingSwitchAction:" destination="Qkx-L5-C4B" eventType="valueChanged" id="C3y-jF-eP0"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="遊んでいる🐈をフロントカメラにて撮影します" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qG-h6-tGs">
+                                                            <rect key="frame" x="0.0" y="47" width="286" height="14.333333333333336"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="E6m-mm-F3u" firstAttribute="top" secondItem="1Ns-L2-eT5" secondAttribute="top" constant="16" id="CIm-5H-QzA"/>
+                                                <constraint firstAttribute="bottom" secondItem="E6m-mm-F3u" secondAttribute="bottom" constant="16" id="JpS-gh-ip4"/>
+                                                <constraint firstAttribute="trailing" secondItem="E6m-mm-F3u" secondAttribute="trailing" constant="32" id="koN-O0-Epj"/>
+                                                <constraint firstItem="E6m-mm-F3u" firstAttribute="leading" secondItem="1Ns-L2-eT5" secondAttribute="leading" constant="32" id="oAB-SS-4CR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="おもちゃの大きさ" id="r09-p8-qjd">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="w7S-yh-4tr">
-                                        <rect key="frame" x="20" y="38" width="350" height="63"/>
+                                        <rect key="frame" x="20" y="215.33333587646484" width="350" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w7S-yh-4tr" id="c15-14-Ldl">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="63"/>
@@ -77,7 +125,7 @@
                             <tableViewSection headerTitle="おもちゃの見た目" id="qPL-YD-j8A">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YDT-8K-wBm">
-                                        <rect key="frame" x="20" y="157" width="350" height="63"/>
+                                        <rect key="frame" x="20" y="334.33333587646484" width="350" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YDT-8K-wBm" id="bUx-1P-8Tt">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="63"/>
@@ -108,7 +156,7 @@
                             <tableViewSection headerTitle="おもちゃの数" id="nLI-I6-oyt">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fj0-9o-QCy">
-                                        <rect key="frame" x="20" y="276" width="350" height="95.666664123535156"/>
+                                        <rect key="frame" x="20" y="453.33333587646484" width="350" height="95.666664123535156"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fj0-9o-QCy" id="tiG-pL-ayD">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="95.666664123535156"/>
@@ -124,7 +172,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="sRH-VP-oIf">
-                                                            <rect key="frame" x="-2" y="33.666666666666664" width="290" height="30.999999999999993"/>
+                                                            <rect key="frame" x="-2" y="33.666666666666664" width="290" height="31"/>
                                                             <connections>
                                                                 <action selector="toyCountChangeAction:" destination="Qkx-L5-C4B" eventType="valueChanged" id="rb4-1L-AOn"/>
                                                             </connections>
@@ -145,7 +193,7 @@
                             <tableViewSection headerTitle="透明化" footerTitle="時間経過でおもちゃが消えて、また出てくる設定ができます。" id="DZt-Gn-IBb">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="43E-WF-JuK">
-                                        <rect key="frame" x="20" y="434.99999618530273" width="350" height="63"/>
+                                        <rect key="frame" x="20" y="612.33333206176758" width="350" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="43E-WF-JuK" id="EOh-2W-uub">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="63"/>
@@ -178,7 +226,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="rxa-15-8tO">
-                                        <rect key="frame" x="20" y="497.99999618530273" width="350" height="126"/>
+                                        <rect key="frame" x="20" y="675.33333206176758" width="350" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rxa-15-8tO" id="W3A-03-tNG">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="126"/>
@@ -217,7 +265,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ItM-vS-nU3">
-                                        <rect key="frame" x="20" y="623.99999618530273" width="350" height="126"/>
+                                        <rect key="frame" x="20" y="801.33333206176758" width="350" height="126"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ItM-vS-nU3" id="u6L-eD-jw9">
                                             <rect key="frame" x="0.0" y="0.0" width="350" height="126"/>
@@ -275,6 +323,7 @@
                         <outlet property="intervalTimeSlider" destination="KNK-PD-JeK" id="tLr-r5-fjC"/>
                         <outlet property="isHiddenSwitch" destination="x1Y-Pj-FTV" id="wD7-H2-D7N"/>
                         <outlet property="kindSegmented" destination="gop-J4-AH9" id="Hpl-6G-E5W"/>
+                        <outlet property="recordingSwitch" destination="ESt-tW-Elc" id="XAt-PD-bt9"/>
                         <outlet property="sizeSegmented" destination="J0H-FA-9GZ" id="3Rw-Iw-qJH"/>
                     </connections>
                 </tableViewController>
@@ -291,13 +340,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J53-Va-cYx">
-                                <rect key="frame" x="39" y="109.33333333333331" width="312" height="118.66666666666669"/>
+                                <rect key="frame" x="39" y="109.66666666666669" width="312" height="118.33333333333331"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LNP-Bz-Ooh">
-                                    <rect key="frame" x="0.0" y="0.0" width="312" height="119"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="312" height="118"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xeV-cr-B2Y">
-                                            <rect key="frame" x="16" y="24.000000000000014" width="280" height="70.333333333333329"/>
+                                            <rect key="frame" x="16" y="23.999999999999986" width="280" height="70.333333333333329"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="きゃっぷ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-QP-b8o">
                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="49.333333333333336"/>
@@ -306,7 +355,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtN-3Z-0XA">
-                                                    <rect key="frame" x="0.0" y="53.333333333333314" width="280" height="17"/>
+                                                    <rect key="frame" x="0.0" y="53.333333333333343" width="280" height="17"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="🐈">
                                                             <attributes>
@@ -364,6 +413,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ4-ML-yki">
+                                <rect key="frame" x="139.66666666666666" y="352.33333333333331" width="110.66666666666666" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="録画を見る"/>
+                                <connections>
+                                    <action selector="previewAction:" destination="KWU-eM-K2i" eventType="touchUpInside" id="inT-lM-6SE"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C61-iz-19G" userLabel="arm">
                                 <rect key="frame" x="57.666666666666657" y="527.66666666666663" width="275" height="316.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -384,7 +441,7 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BV1-FR-VrT" kind="show" id="JXV-oZ-Ohx"/>
+                                            <action selector="startAction:" destination="KWU-eM-K2i" eventType="touchUpInside" id="W4O-za-hFx"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9g-sz-1zd">
@@ -468,8 +525,10 @@
                             <constraint firstItem="C61-iz-19G" firstAttribute="top" secondItem="QjB-Hz-X7e" secondAttribute="centerY" id="11X-25-2Gu"/>
                             <constraint firstAttribute="bottom" secondItem="C61-iz-19G" secondAttribute="bottom" id="4HU-i9-YtP"/>
                             <constraint firstItem="J53-Va-cYx" firstAttribute="width" secondItem="UeY-oT-WQA" secondAttribute="width" multiplier="0.8" id="G4P-Uq-mlE"/>
+                            <constraint firstItem="SZ4-ML-yki" firstAttribute="centerX" secondItem="C61-iz-19G" secondAttribute="centerX" id="Ha2-1b-xi8"/>
                             <constraint firstItem="J53-Va-cYx" firstAttribute="centerX" secondItem="UeY-oT-WQA" secondAttribute="centerX" id="JFc-i5-656"/>
                             <constraint firstItem="QjB-Hz-X7e" firstAttribute="centerY" secondItem="UeY-oT-WQA" secondAttribute="centerY" multiplier="1.25" id="WSA-Kc-JiJ"/>
+                            <constraint firstItem="QjB-Hz-X7e" firstAttribute="top" secondItem="SZ4-ML-yki" secondAttribute="bottom" constant="16" id="nPy-7m-JCs"/>
                             <constraint firstItem="C61-iz-19G" firstAttribute="width" secondItem="QjB-Hz-X7e" secondAttribute="width" id="vCj-lO-tBi"/>
                             <constraint firstItem="J53-Va-cYx" firstAttribute="centerY" secondItem="UeY-oT-WQA" secondAttribute="centerY" multiplier="0.4" id="wof-Mb-wNW"/>
                             <constraint firstItem="QjB-Hz-X7e" firstAttribute="centerX" secondItem="UeY-oT-WQA" secondAttribute="centerX" id="xGA-hT-X9s"/>
@@ -479,6 +538,7 @@
                     <navigationItem key="navigationItem" id="LnJ-5U-jfj"/>
                     <connections>
                         <outlet property="handView" destination="QjB-Hz-X7e" id="gTP-by-stF"/>
+                        <outlet property="previewButton" destination="SZ4-ML-yki" id="Dq0-nc-Stg"/>
                         <outlet property="startButton" destination="8eO-EK-xvK" id="5aV-fg-Qqn"/>
                     </connections>
                 </viewController>
@@ -495,7 +555,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX5-gz-YvS">
-                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                                <rect key="frame" x="0.0" y="143" width="390" height="701"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-p9-6yV">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="4677.666666666667"/>
@@ -888,10 +948,25 @@
             </objects>
             <point key="canvasLocation" x="-469.23076923076923" y="820.37914691943126"/>
         </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="KGb-ue-4ch">
+            <objects>
+                <viewController storyboardIdentifier="PreviewViewController" id="LNl-qW-BNA" customClass="PreviewViewController" customModule="CatTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HlE-Xd-SN2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iru-58-uDC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bho-BW-GVI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="820"/>
+        </scene>
         <!--Free Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="FreeGameViewController" customModule="CatTap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FreeGameViewController" id="BV1-FR-VrT" customClass="FreeGameViewController" customModule="CatTap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

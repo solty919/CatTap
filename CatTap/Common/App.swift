@@ -23,5 +23,8 @@ final class App {
     @Storage("bestScore", defaultValue: 0)
     var bestScore: Int
     
+    @Storage("isRecording", defaultValue: false)
+    var isRecording: Bool
+    
     private init() {}
 }

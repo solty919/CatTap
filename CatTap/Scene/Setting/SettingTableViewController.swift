@@ -1,5 +1,6 @@
 import UIKit
 import SpriteKit
+import AVFoundation
 
 enum ToySize: Int, CaseIterable {
     case small
@@ -22,7 +23,9 @@ enum ToyKind: Int, CaseIterable {
 }
 
 final class SettingTableViewController: UITableViewController {
-
+    
+    @IBOutlet private weak var recordingSwitch: UISwitch!
+    
     @IBOutlet private weak var sizeSegmented: UISegmentedControl!
     @IBOutlet private weak var kindSegmented: UISegmentedControl!
     
@@ -41,6 +44,8 @@ final class SettingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        recordingSwitch.isOn = App.shared.isRecording
         
         sizeSegmented.selectedSegmentIndex = ToySize.allCases.firstIndex(of: App.shared.size) ?? 0
         kindSegmented.selectedSegmentIndex = ToyKind.allCases.firstIndex(of: App.shared.kind) ?? 0
@@ -102,6 +107,33 @@ final class SettingTableViewController: UITableViewController {
             hiddenTimeSlider.isEnabled = false
         }
         tableView.reloadData()
+    }
+    
+    @IBAction private func recordingSwitchAction(_ sender: UISwitch) {
+        if sender.isOn {
+            let auth = AVCaptureDevice.authorizationStatus(for: .video)
+            switch auth {
+            case .notDetermined: requestVideo(sender)
+            case .authorized: App.shared.isRecording = sender.isOn
+            case .denied, .restricted: sender.isOn = false
+            @unknown default: break
+            }
+            
+        } else {
+            App.shared.isRecording = sender.isOn
+        }
+    }
+    
+    private func requestVideo(_ sender: UISwitch) {
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            Task { @MainActor in
+                if granted {
+                    App.shared.isRecording = sender.isOn
+                } else {
+                    sender.isOn = false
+                }
+            }
+        }
     }
     
 }

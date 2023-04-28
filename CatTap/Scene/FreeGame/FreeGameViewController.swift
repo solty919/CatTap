@@ -7,6 +7,14 @@ final class FreeGameViewController: UIViewController {
 
     @IBOutlet private weak var containerView: UIView!
     
+    private let onEnd: () -> Void
+    
+    required init?(coder: NSCoder) { fatalError() }
+    init?(coder: NSCoder, onEnd: @escaping () -> Void) {
+        self.onEnd = onEnd
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +47,7 @@ final class FreeGameViewController: UIViewController {
         return [.bottom]
     }
     
-    @IBAction func tapGesture(_ sender: UITapGestureRecognizer) {
+    @IBAction private func tapGesture(_ sender: UITapGestureRecognizer) {
         if
             let containerView = containerView as? SKView,
             let scene = containerView.scene as? BugScene
@@ -57,7 +65,7 @@ final class FreeGameViewController: UIViewController {
                 }
             }
         }
-        
+        onEnd()
         navigationController?.popViewController(animated: true)
     }
     

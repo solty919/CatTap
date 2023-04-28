@@ -14,6 +14,7 @@
 		40330EE929DA80FF00A12E28 /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40330EE829DA80FF00A12E28 /* DateFormatter+.swift */; };
 		40330EEC29DA81D000A12E28 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40330EEB29DA81D000A12E28 /* Storage.swift */; };
 		40330EEE29DA822C00A12E28 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40330EED29DA822C00A12E28 /* Feedback.swift */; };
+		405B82AB29E1798000021F2B /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405B82AA29E1798000021F2B /* Recording.swift */; };
 		405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA2627842C5300E52840 /* AppDelegate.swift */; };
 		405CFA2F27842C5300E52840 /* FreeGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA2E27842C5300E52840 /* FreeGameViewController.swift */; };
 		405CFA3227842C5300E52840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA3027842C5300E52840 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 		405CFA4D27856F4300E52840 /* NotoSansJP-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4727856F4300E52840 /* NotoSansJP-Medium.otf */; };
 		408A563427B6753B008DB865 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563327B6753B008DB865 /* UIView+.swift */; };
 		408A563727B67CA2008DB865 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563627B67CA2008DB865 /* ProfileViewController.swift */; };
+		40CD2FCD29E448B8003C1AF9 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD2FCC29E448B8003C1AF9 /* PreviewViewController.swift */; };
+		40CD2FD029E4517F003C1AF9 /* PreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD2FCF29E4517F003C1AF9 /* PreviewItem.swift */; };
 		40F4486A27E846FD00D2E4BE /* komachi_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486327E846FD00D2E4BE /* komachi_6.jpg */; };
 		40F4486B27E846FD00D2E4BE /* komachi_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486427E846FD00D2E4BE /* komachi_5.jpg */; };
 		40F4486C27E846FD00D2E4BE /* komachi_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486527E846FD00D2E4BE /* komachi_3.jpg */; };
@@ -74,6 +77,7 @@
 		40330EE829DA80FF00A12E28 /* DateFormatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
 		40330EEB29DA81D000A12E28 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		40330EED29DA822C00A12E28 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		405B82AA29E1798000021F2B /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
 		405CFA2327842C5300E52840 /* CatTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405CFA2627842C5300E52840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		405CFA2E27842C5300E52840 /* FreeGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeGameViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		405CFA4E27856FD600E52840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		408A563327B6753B008DB865 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		408A563627B67CA2008DB865 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		40CD2FCC29E448B8003C1AF9 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		40CD2FCF29E4517F003C1AF9 /* PreviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewItem.swift; sourceTree = "<group>"; };
 		40F4486327E846FD00D2E4BE /* komachi_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_6.jpg; sourceTree = "<group>"; };
 		40F4486427E846FD00D2E4BE /* komachi_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_5.jpg; sourceTree = "<group>"; };
 		40F4486527E846FD00D2E4BE /* komachi_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_3.jpg; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 		402905BF27C36151007AFE8C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				40CD2FCB29E448A5003C1AF9 /* Preview */,
 				4006B8AE27E62C0400A507E4 /* Tester */,
 				408A563527B67C86008DB865 /* Profile */,
 				40FDD8952785CA5E003BE4DB /* Setting */,
@@ -248,6 +255,22 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		40CD2FCB29E448A5003C1AF9 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				40CD2FCC29E448B8003C1AF9 /* PreviewViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		40CD2FCE29E45155003C1AF9 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				40CD2FCF29E4517F003C1AF9 /* PreviewItem.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
 		40F9D87F27C39C32002BD035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +312,8 @@
 			children = (
 				40FDD8992785CD03003BE4DB /* App.swift */,
 				40330EED29DA822C00A12E28 /* Feedback.swift */,
+				405B82AA29E1798000021F2B /* Recording.swift */,
+				40CD2FCE29E45155003C1AF9 /* Preview */,
 				40FDD89F27886777003BE4DB /* Extension */,
 			);
 			path = Common;
@@ -425,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40FDD8972785CA75003BE4DB /* SettingTableViewController.swift in Sources */,
+				40CD2FD029E4517F003C1AF9 /* PreviewItem.swift in Sources */,
 				40F4488027E854C600D2E4BE /* UIImage+.swift in Sources */,
 				40FDD8942785BE41003BE4DB /* TopViewController.swift in Sources */,
 				408A563727B67CA2008DB865 /* ProfileViewController.swift in Sources */,
@@ -434,9 +460,11 @@
 				40F9D87A27C38BA3002BD035 /* GestureTutorialViewController.swift in Sources */,
 				40FDD89A2785CD03003BE4DB /* App.swift in Sources */,
 				40FDD8A12788679E003BE4DB /* UIViewController+.swift in Sources */,
+				40CD2FCD29E448B8003C1AF9 /* PreviewViewController.swift in Sources */,
 				40330EE929DA80FF00A12E28 /* DateFormatter+.swift in Sources */,
 				4006B8B627E837C800A507E4 /* NekoType.swift in Sources */,
 				405CFA3E2784477700E52840 /* BugScene.swift in Sources */,
+				405B82AB29E1798000021F2B /* Recording.swift in Sources */,
 				40FDD8A32788691E003BE4DB /* SKScene+.swift in Sources */,
 				40330EEC29DA81D000A12E28 /* Storage.swift in Sources */,
 				405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */,
@@ -593,11 +621,13 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU45P949ZD;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NV6HY7RM29;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DU45P949ZD;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatTap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "きゃっぷ🐈";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ねこ撮影のためカメラを利用します";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -611,11 +641,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = kayashida.CatTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = WildCard_dev;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = khayashida_dev;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = WildCard_dev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -636,6 +666,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatTap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "きゃっぷ🐈";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ねこ撮影のためカメラを利用します";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -649,7 +681,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = kayashida.CatTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = CatTap_appstore;
