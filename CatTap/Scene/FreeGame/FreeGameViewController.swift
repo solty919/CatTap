@@ -26,7 +26,7 @@ final class FreeGameViewController: UIViewController {
         navigationItem.hidesBackButton = true
         
         if let containerView = self.containerView as? SKView {
-            if let scene = SKScene(fileNamed: "BugScene") {
+            if let scene = SKScene(fileNamed: "ToyScene") {
                 scene.scaleMode = .aspectFill
                 scene.size = view.bounds.size
                 containerView.presentScene(scene)
@@ -50,7 +50,7 @@ final class FreeGameViewController: UIViewController {
     @IBAction private func tapGesture(_ sender: UITapGestureRecognizer) {
         if
             let containerView = containerView as? SKView,
-            let scene = containerView.scene as? BugScene
+            let scene = containerView.scene as? ToyScene
         {
             if 3 < scene.score {
                 App.shared.satisfyScore = App.shared.satisfyScore + 1

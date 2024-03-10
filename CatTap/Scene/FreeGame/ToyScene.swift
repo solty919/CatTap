@@ -2,9 +2,9 @@ import SpriteKit
 import GameplayKit
 import AVFoundation
 
-final class BugScene: SKScene {
+final class ToyScene: SKScene {
     
-    private lazy var bug = childNode(withName: "bug") as? SKSpriteNode
+    private lazy var toy = childNode(withName: "toy") as? SKSpriteNode
     private lazy var pointEffect = childNode(withName: "pointEffect") as? SKLabelNode
     private lazy var pointLabel = childNode(withName: "pointLabel") as? SKLabelNode
     private lazy var bestLabel = childNode(withName: "bestLabel") as? SKLabelNode
@@ -22,7 +22,7 @@ final class BugScene: SKScene {
         
         backgroundColor = .clear
         
-        if let bug = bug {
+        if let bug = toy {
             bug.texture = SKTexture(imageNamed: String(describing: App.shared.kind))
             bug.size = App.shared.size.cgSize
             //透明化設定されている場合のみアニメーション追加
@@ -71,7 +71,7 @@ final class BugScene: SKScene {
     private func pause() {
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(abs(random))) {
             self.children
-                .filter { $0.name == "bug" }
+                .filter { $0.name == "toy" }
                 .forEach {
                     $0.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
                     $0.physicsBody?.angularVelocity = 0
@@ -83,7 +83,7 @@ final class BugScene: SKScene {
     private func impulse() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.children
-                .filter { $0.name == "bug" }
+                .filter { $0.name == "toy" }
                 .forEach {
                     $0.physicsBody?.applyImpulse(CGVector(dx: self.random * 100, dy: self.random * 100))
                 }
@@ -92,14 +92,14 @@ final class BugScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let node = bug {
+        if let node = toy {
             node.physicsBody?.applyImpulse(CGVector(dx: random * 100, dy: random * 100))
         }
         
         for touche in touches {
             let location = touche.location(in: self)
             if let node = atPoint(location) as? SKSpriteNode {
-                if node.name == "bug" {
+                if node.name == "toy" {
                     score += 1
                     pointLabel?.text = "\(score)P"
                     bugTouchAction(atPoint: location)
@@ -109,14 +109,13 @@ final class BugScene: SKScene {
     }
     
     private func bugTouchAction(atPoint position : CGPoint) {
-        
         Feedback.impact()
-        
+        // サウンド再生
         if let url = Bundle.main.url(forResource: "papa", withExtension: "mp3") {
             player = try? AVAudioPlayer(contentsOf: url)
             player?.play()
         }
-        
+        // ポイント表示エフェクト
         if let pointEffect = pointEffect?.copy() as? SKLabelNode {
             pointEffect.position = position
             pointEffect.alpha = 1
@@ -125,6 +124,7 @@ final class BugScene: SKScene {
                                                SKAction.removeFromParent()]))
             addChild(pointEffect)
         }
+        // 波のエフェクト
         if let waveEffect = waveEffect.copy() as? SKShapeNode {
             waveEffect.lineWidth = 1
             waveEffect.position = position
@@ -137,6 +137,6 @@ final class BugScene: SKScene {
     
 }
 
-extension BugScene: SKPhysicsContactDelegate {
+extension ToyScene: SKPhysicsContactDelegate {
     
 }

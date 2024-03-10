@@ -20,8 +20,8 @@
 		405CFA3227842C5300E52840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA3027842C5300E52840 /* Main.storyboard */; };
 		405CFA3427842C5500E52840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA3327842C5500E52840 /* Assets.xcassets */; };
 		405CFA3727842C5500E52840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA3527842C5500E52840 /* LaunchScreen.storyboard */; };
-		405CFA3E2784477700E52840 /* BugScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA3D2784477700E52840 /* BugScene.swift */; };
-		405CFA4027844B7000E52840 /* BugScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA3F27844B7000E52840 /* BugScene.sks */; };
+		405CFA3E2784477700E52840 /* ToyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CFA3D2784477700E52840 /* ToyScene.swift */; };
+		405CFA4027844B7000E52840 /* ToyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA3F27844B7000E52840 /* ToyScene.sks */; };
 		405CFA4827856F4300E52840 /* NotoSansJP-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4227856F4300E52840 /* NotoSansJP-Bold.otf */; };
 		405CFA4927856F4300E52840 /* NotoSansJP-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4327856F4300E52840 /* NotoSansJP-Thin.otf */; };
 		405CFA4A27856F4300E52840 /* NotoSansJP-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4427856F4300E52840 /* NotoSansJP-Regular.otf */; };
@@ -32,6 +32,8 @@
 		408A563727B67CA2008DB865 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563627B67CA2008DB865 /* ProfileViewController.swift */; };
 		40CD2FCD29E448B8003C1AF9 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD2FCC29E448B8003C1AF9 /* PreviewViewController.swift */; };
 		40CD2FD029E4517F003C1AF9 /* PreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD2FCF29E4517F003C1AF9 /* PreviewItem.swift */; };
+		40D92B902B9DA33B00631918 /* ToySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D92B8F2B9DA33B00631918 /* ToySize.swift */; };
+		40D92B922B9DA38600631918 /* ToyKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D92B912B9DA38600631918 /* ToyKind.swift */; };
 		40F4486A27E846FD00D2E4BE /* komachi_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486327E846FD00D2E4BE /* komachi_6.jpg */; };
 		40F4486B27E846FD00D2E4BE /* komachi_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486427E846FD00D2E4BE /* komachi_5.jpg */; };
 		40F4486C27E846FD00D2E4BE /* komachi_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4486527E846FD00D2E4BE /* komachi_3.jpg */; };
@@ -84,8 +86,8 @@
 		405CFA3127842C5300E52840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		405CFA3327842C5500E52840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		405CFA3627842C5500E52840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		405CFA3D2784477700E52840 /* BugScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugScene.swift; sourceTree = "<group>"; };
-		405CFA3F27844B7000E52840 /* BugScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BugScene.sks; sourceTree = "<group>"; };
+		405CFA3D2784477700E52840 /* ToyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyScene.swift; sourceTree = "<group>"; };
+		405CFA3F27844B7000E52840 /* ToyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ToyScene.sks; sourceTree = "<group>"; };
 		405CFA4227856F4300E52840 /* NotoSansJP-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Bold.otf"; sourceTree = "<group>"; };
 		405CFA4327856F4300E52840 /* NotoSansJP-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Thin.otf"; sourceTree = "<group>"; };
 		405CFA4427856F4300E52840 /* NotoSansJP-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Regular.otf"; sourceTree = "<group>"; };
@@ -97,6 +99,8 @@
 		408A563627B67CA2008DB865 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		40CD2FCC29E448B8003C1AF9 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		40CD2FCF29E4517F003C1AF9 /* PreviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewItem.swift; sourceTree = "<group>"; };
+		40D92B8F2B9DA33B00631918 /* ToySize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToySize.swift; sourceTree = "<group>"; };
+		40D92B912B9DA38600631918 /* ToyKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyKind.swift; sourceTree = "<group>"; };
 		40F4486327E846FD00D2E4BE /* komachi_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_6.jpg; sourceTree = "<group>"; };
 		40F4486427E846FD00D2E4BE /* komachi_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_5.jpg; sourceTree = "<group>"; };
 		40F4486527E846FD00D2E4BE /* komachi_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komachi_3.jpg; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 				405CFA2627842C5300E52840 /* AppDelegate.swift */,
 				40FDD8982785CCF7003BE4DB /* Common */,
 				402905BF27C36151007AFE8C /* Scene */,
+				40D92B8E2B9DA32C00631918 /* Entity */,
 				40FDD89B278721FE003BE4DB /* Resource */,
 				405CFA4E27856FD600E52840 /* Info.plist */,
 				405CFA3027842C5300E52840 /* Main.storyboard */,
@@ -271,6 +276,15 @@
 			path = Preview;
 			sourceTree = "<group>";
 		};
+		40D92B8E2B9DA32C00631918 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				40D92B8F2B9DA33B00631918 /* ToySize.swift */,
+				40D92B912B9DA38600631918 /* ToyKind.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		40F9D87F27C39C32002BD035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,8 +297,8 @@
 		40FDD8912785BE06003BE4DB /* FreeGame */ = {
 			isa = PBXGroup;
 			children = (
-				405CFA3F27844B7000E52840 /* BugScene.sks */,
-				405CFA3D2784477700E52840 /* BugScene.swift */,
+				405CFA3F27844B7000E52840 /* ToyScene.sks */,
+				405CFA3D2784477700E52840 /* ToyScene.swift */,
 				405CFA2E27842C5300E52840 /* FreeGameViewController.swift */,
 				40F9D87927C38BA3002BD035 /* GestureTutorialViewController.swift */,
 			);
@@ -434,7 +448,7 @@
 				4006B8B827E83CD200A507E4 /* higeyoshi_0.MOV in Resources */,
 				40F4486C27E846FD00D2E4BE /* komachi_3.jpg in Resources */,
 				405CFA4B27856F4300E52840 /* NotoSansJP-Black.otf in Resources */,
-				405CFA4027844B7000E52840 /* BugScene.sks in Resources */,
+				405CFA4027844B7000E52840 /* ToyScene.sks in Resources */,
 				405CFA4C27856F4300E52840 /* NotoSansJP-Light.otf in Resources */,
 				40F4487E27E8515B00D2E4BE /* higeyoshi_0.jpg in Resources */,
 				405CFA4D27856F4300E52840 /* NotoSansJP-Medium.otf in Resources */,
@@ -463,9 +477,11 @@
 				40CD2FCD29E448B8003C1AF9 /* PreviewViewController.swift in Sources */,
 				40330EE929DA80FF00A12E28 /* DateFormatter+.swift in Sources */,
 				4006B8B627E837C800A507E4 /* NekoType.swift in Sources */,
-				405CFA3E2784477700E52840 /* BugScene.swift in Sources */,
+				405CFA3E2784477700E52840 /* ToyScene.swift in Sources */,
+				40D92B902B9DA33B00631918 /* ToySize.swift in Sources */,
 				405B82AB29E1798000021F2B /* Recording.swift in Sources */,
 				40FDD8A32788691E003BE4DB /* SKScene+.swift in Sources */,
+				40D92B922B9DA38600631918 /* ToyKind.swift in Sources */,
 				40330EEC29DA81D000A12E28 /* Storage.swift in Sources */,
 				405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */,
 				4006B8B027E62C1700A507E4 /* TesterViewController.swift in Sources */,
@@ -641,7 +657,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = kayashida.CatTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = WildCard_dev;
@@ -681,7 +697,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = kayashida.CatTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = CatTap_appstore;

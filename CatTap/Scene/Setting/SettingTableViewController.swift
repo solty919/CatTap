@@ -2,28 +2,7 @@ import UIKit
 import SpriteKit
 import AVFoundation
 
-enum ToySize: Int, CaseIterable {
-    case small
-    case midium
-    case large
-    
-    var cgSize: CGSize {
-        switch self {
-        case .small: return CGSize(width: 100, height: 100)
-        case .midium: return CGSize(width: 150, height: 150)
-        case .large: return CGSize(width: 200, height: 200)
-        }
-    }
-}
-
-enum ToyKind: Int, CaseIterable {
-    case bug
-    case bird
-    case fish
-}
-
 final class SettingTableViewController: UITableViewController {
-    
     @IBOutlet private weak var recordingSwitch: UISwitch!
     
     @IBOutlet private weak var sizeSegmented: UISegmentedControl!
@@ -64,48 +43,41 @@ final class SettingTableViewController: UITableViewController {
         hiddenMode(App.shared.isHiddenMode)
     }
 
-    @IBAction func toySizeChangeAction(_ sender: UISegmentedControl) {
+    @IBAction private func toySizeChangeAction(_ sender: UISegmentedControl) {
         let size = ToySize(rawValue: sender.selectedSegmentIndex) ?? .small
         App.shared.size = size
     }
     
-    @IBAction func toyKindChangeAction(_ sender: UISegmentedControl) {
+    @IBAction private func toyKindChangeAction(_ sender: UISegmentedControl) {
         let kind = ToyKind(rawValue: sender.selectedSegmentIndex) ?? .bug
         App.shared.kind = kind
     }
     
-    @IBAction func toyCountChangeAction(_ sender: UISlider) {
+    @IBAction private func toyCountChangeAction(_ sender: UISlider) {
         countLabel.text = String(Int(sender.value.rounded()))
         App.shared.count = Int(sender.value.rounded())
     }
     
-    @IBAction func isHiddenSwitchAction(_ sender: UISwitch) {
+    @IBAction private func isHiddenSwitchAction(_ sender: UISwitch) {
         App.shared.isHiddenMode = sender.isOn
         hiddenMode(sender.isOn)
     }
     
-    @IBAction func toyIntervalTimeChangeAction(_ sender: UISlider) {
+    @IBAction private func toyIntervalTimeChangeAction(_ sender: UISlider) {
         intervalTimeLabel.text = String(Int(sender.value.rounded()))
         App.shared.intervalTime = Int(sender.value.rounded())
     }
     
-    @IBAction func toyHiddenTimeChangeAction(_ sender: UISlider) {
+    @IBAction private func toyHiddenTimeChangeAction(_ sender: UISlider) {
         hiddenTimeLabel.text = String(Int(sender.value.rounded()))
         App.shared.hiddenTime = Int(sender.value.rounded())
     }
     
     private func hiddenMode(_ isHidden: Bool) {
-        if isHidden {
-            intervalTimeContentView.alpha = 1
-            hiddenTimeContentView.alpha = 1
-            intervalTimeSlider.isEnabled = true
-            hiddenTimeSlider.isEnabled = true
-        } else {
-            intervalTimeContentView.alpha = 0.5
-            hiddenTimeContentView.alpha = 0.5
-            intervalTimeSlider.isEnabled = false
-            hiddenTimeSlider.isEnabled = false
-        }
+        intervalTimeContentView.alpha = isHidden ? 1 : 0.5
+        hiddenTimeContentView.alpha = isHidden ? 1 : 0.5
+        intervalTimeSlider.isEnabled = isHidden
+        hiddenTimeSlider.isEnabled = isHidden
         tableView.reloadData()
     }
     
