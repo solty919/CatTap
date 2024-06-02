@@ -3,7 +3,7 @@ import QuickLook
 import AVKit
 
 final class TopViewController: UIViewController {
-
+    
     @IBOutlet private weak var previewButton: UIButton!
     @IBOutlet private weak var handView: UIView!
     @IBOutlet private weak var startButton: UIButton!
@@ -20,22 +20,30 @@ final class TopViewController: UIViewController {
         let previewController = QLPreviewController()
         previewController.dataSource = self
         previewController.delegate = self
-        previewController.navigationItem.rightBarButtonItems = nil
         present(previewController, animated: true)
+    }
+    
+    private func showTimelineWithUpload() {
+        guard 
+            let vc = UIStoryboard(name: "Main", bundle: nil)
+                .instantiateViewController(identifier: "TimeLineViewController") as? TimeLineViewController,
+            let url = temporaryUrls.last
+        else { return }
+        
+        show(vc, sender: nil)
+        vc.upload(url)
     }
     
     @IBAction private func startAction(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil)
-            .instantiateViewController(
-                identifier: "FreeGameViewController",
-                creator: { coder in
-                    FreeGameViewController(coder: coder, onEnd: {
-                        Recording.shared.stop { url in
-                            self.temporaryUrls.append(url)
-                            self.previewButton.isHidden = false
-                        }
-                    })
+            .instantiateViewController(identifier: "FreeGameViewController", creator: { coder in
+                FreeGameViewController(coder: coder, onEnd: {
+                    Recording.shared.stop { url in
+                        self.temporaryUrls.append(url)
+                        self.previewButton.isHidden = false
+                    }
                 })
+            })
         if App.shared.isRecording {
             Recording.shared.start()
         }
@@ -67,11 +75,18 @@ extension TopViewController: QLPreviewControllerDelegate {
     }
     
     func previewControllerDidDismiss(_ controller: QLPreviewController) {
-        temporaryUrls.forEach {
-            try? FileManager.default.removeItem(at: $0)
-        }
-        temporaryUrls.removeAll()
-        previewButton.isHidden = true
+        let alert = UIAlertController(title: "にゃんこムービーをどうするか選んでにゃ🐈", message: "", preferredStyle: .actionSheet)
+        alert.addAction(.init(title: "あっぷろーど", style: .default, handler: { _ in
+            self.showTimelineWithUpload()
+        }))
+        alert.addAction(.init(title: "削除", style: .destructive, handler: { _ in
+            self.temporaryUrls.forEach { try? FileManager.default.removeItem(at: $0) }
+            self.temporaryUrls.removeAll()
+            self.previewButton.isHidden = true
+        }))
+        alert.addAction(.init(title: "キャンセル", style: .cancel))
+        
+        present(alert, animated: true)
     }
     
 }

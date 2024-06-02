@@ -28,7 +28,15 @@
 		405CFA4B27856F4300E52840 /* NotoSansJP-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4527856F4300E52840 /* NotoSansJP-Black.otf */; };
 		405CFA4C27856F4300E52840 /* NotoSansJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4627856F4300E52840 /* NotoSansJP-Light.otf */; };
 		405CFA4D27856F4300E52840 /* NotoSansJP-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 405CFA4727856F4300E52840 /* NotoSansJP-Medium.otf */; };
+		405E2B812C0C0936007CF5A0 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E2B802C0C0936007CF5A0 /* UploadViewController.swift */; };
 		408A563427B6753B008DB865 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A563327B6753B008DB865 /* UIView+.swift */; };
+		40C9F2C42BFD9F860036587C /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 40C9F2C32BFD9F860036587C /* Auth */; };
+		40C9F2C62BFD9F860036587C /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 40C9F2C52BFD9F860036587C /* Functions */; };
+		40C9F2C82BFD9F860036587C /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 40C9F2C72BFD9F860036587C /* PostgREST */; };
+		40C9F2CA2BFD9F860036587C /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 40C9F2C92BFD9F860036587C /* Realtime */; };
+		40C9F2CC2BFD9F860036587C /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 40C9F2CB2BFD9F860036587C /* Storage */; };
+		40C9F2CE2BFD9F860036587C /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 40C9F2CD2BFD9F860036587C /* Supabase */; };
+		40C9F2D12BFDA00B0036587C /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C9F2D02BFDA00B0036587C /* TimeLineViewController.swift */; };
 		40CD2FCD29E448B8003C1AF9 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD2FCC29E448B8003C1AF9 /* PreviewViewController.swift */; };
 		40CD2FD029E4517F003C1AF9 /* PreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD2FCF29E4517F003C1AF9 /* PreviewItem.swift */; };
 		40D92B902B9DA33B00631918 /* ToySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D92B8F2B9DA33B00631918 /* ToySize.swift */; };
@@ -94,7 +102,9 @@
 		405CFA4627856F4300E52840 /* NotoSansJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Light.otf"; sourceTree = "<group>"; };
 		405CFA4727856F4300E52840 /* NotoSansJP-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Medium.otf"; sourceTree = "<group>"; };
 		405CFA4E27856FD600E52840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		405E2B802C0C0936007CF5A0 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		408A563327B6753B008DB865 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		40C9F2D02BFDA00B0036587C /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		40CD2FCC29E448B8003C1AF9 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		40CD2FCF29E4517F003C1AF9 /* PreviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewItem.swift; sourceTree = "<group>"; };
 		40D92B8F2B9DA33B00631918 /* ToySize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToySize.swift; sourceTree = "<group>"; };
@@ -130,6 +140,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C9F2C82BFD9F860036587C /* PostgREST in Frameworks */,
+				40C9F2C62BFD9F860036587C /* Functions in Frameworks */,
+				40C9F2CE2BFD9F860036587C /* Supabase in Frameworks */,
+				40C9F2C42BFD9F860036587C /* Auth in Frameworks */,
+				40C9F2CC2BFD9F860036587C /* Storage in Frameworks */,
+				40C9F2CA2BFD9F860036587C /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +195,7 @@
 			children = (
 				40FDD8922785BE32003BE4DB /* Top */,
 				40FDD8912785BE06003BE4DB /* FreeGame */,
+				40C9F2CF2BFD9FEE0036587C /* TimeLine */,
 				40CD2FCB29E448A5003C1AF9 /* Preview */,
 				4006B8AE27E62C0400A507E4 /* Tester */,
 				40FDD8952785CA5E003BE4DB /* Setting */,
@@ -247,6 +264,15 @@
 				405CFA4327856F4300E52840 /* NotoSansJP-Thin.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		40C9F2CF2BFD9FEE0036587C /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				40C9F2D02BFDA00B0036587C /* TimeLineViewController.swift */,
+				405E2B802C0C0936007CF5A0 /* UploadViewController.swift */,
+			);
+			path = TimeLine;
 			sourceTree = "<group>";
 		};
 		40CD2FCB29E448A5003C1AF9 /* Preview */ = {
@@ -371,6 +397,14 @@
 			dependencies = (
 			);
 			name = CatTap;
+			packageProductDependencies = (
+				40C9F2C32BFD9F860036587C /* Auth */,
+				40C9F2C52BFD9F860036587C /* Functions */,
+				40C9F2C72BFD9F860036587C /* PostgREST */,
+				40C9F2C92BFD9F860036587C /* Realtime */,
+				40C9F2CB2BFD9F860036587C /* Storage */,
+				40C9F2CD2BFD9F860036587C /* Supabase */,
+			);
 			productName = CatTap;
 			productReference = 405CFA2327842C5300E52840 /* CatTap.app */;
 			productType = "com.apple.product-type.application";
@@ -400,6 +434,7 @@
 			);
 			mainGroup = 405CFA1A27842C5300E52840;
 			packageReferences = (
+				40C9F2C22BFD9F860036587C /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			productRefGroup = 405CFA2427842C5300E52840 /* Products */;
 			projectDirPath = "";
@@ -452,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405E2B812C0C0936007CF5A0 /* UploadViewController.swift in Sources */,
 				40FDD8972785CA75003BE4DB /* SettingTableViewController.swift in Sources */,
 				40CD2FD029E4517F003C1AF9 /* PreviewItem.swift in Sources */,
 				40F4488027E854C600D2E4BE /* UIImage+.swift in Sources */,
@@ -469,6 +505,7 @@
 				40D92B902B9DA33B00631918 /* ToySize.swift in Sources */,
 				405B82AB29E1798000021F2B /* Recording.swift in Sources */,
 				40FDD8A32788691E003BE4DB /* SKScene+.swift in Sources */,
+				40C9F2D12BFDA00B0036587C /* TimeLineViewController.swift in Sources */,
 				40D92B922B9DA38600631918 /* ToyKind.swift in Sources */,
 				40330EEC29DA81D000A12E28 /* Storage.swift in Sources */,
 				405CFA2727842C5300E52840 /* AppDelegate.swift in Sources */,
@@ -717,6 +754,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40C9F2C22BFD9F860036587C /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40C9F2C32BFD9F860036587C /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40C9F2C22BFD9F860036587C /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		40C9F2C52BFD9F860036587C /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40C9F2C22BFD9F860036587C /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		40C9F2C72BFD9F860036587C /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40C9F2C22BFD9F860036587C /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		40C9F2C92BFD9F860036587C /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40C9F2C22BFD9F860036587C /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		40C9F2CB2BFD9F860036587C /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40C9F2C22BFD9F860036587C /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		40C9F2CD2BFD9F860036587C /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40C9F2C22BFD9F860036587C /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 405CFA1B27842C5300E52840 /* Project object */;
 }
